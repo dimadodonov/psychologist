@@ -18,7 +18,10 @@
 @import 'main';
 
 // Import site layouts
-// @import 'layout/header';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/sidebar';
 
 // Import pages
+@import 'pages/blog';
 @import 'pages/page';

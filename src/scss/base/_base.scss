@@ -20,7 +20,6 @@ html {
     }
 
     &.no-touch-events {
-
         .wrapper,
         .wrapper__inner {
             pointer-events: none;
@@ -86,6 +85,25 @@ label {
 
 //.main
 
-.container {}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    @include md-block() {
+        max-width: 940px;
+    }
+
+    @include sm-block() {
+        max-width: 620px;
+    }
+
+    @include fp-block() {
+        max-width: 460px;
+    }
+
+    @include xs-block() {
+        max-width: 300px;
+    }
+}
 
 //.container

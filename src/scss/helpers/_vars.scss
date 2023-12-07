@@ -1,10 +1,10 @@
 //FONTS
 $f: Montserrat-Regular, sans-serif;
-// $f-light: Montserrat-light, sans-serif;
+$f-light: Montserrat-light, sans-serif;
 $f-medium: Montserrat-Medium, sans-serif;
 $f-bold: Montserrat-Bold, sans-serif;
-$f-SemiBold: Montserrat-SemiBold, sans-serif;
-$f-ExtraBold: Montserrat-ExtraBold, sans-serif;
+$f-semibold: Montserrat-SemiBold, sans-serif;
+$f-extrabold: Montserrat-ExtraBold, sans-serif;
 
 $f2-bold: BebasNeue-Bold, sans-serif;
 
@@ -92,7 +92,8 @@ $color-border--lightest: #dee3e7;
 $input-color-border: #c7c7c7;
 $input-color-text: #3263a6;
 $input-color-border--hover: #b3b3b3;
-$input-shadow--hover: 0 2px 4px 0 rgba(0, 0, 0, 0.05),
+$input-shadow--hover:
+    0 2px 4px 0 rgba(0, 0, 0, 0.05),
     0 0 4px 0 rgba(0, 0, 0, 0.05);
 
 $color-placeholder: #999;
@@ -102,7 +103,9 @@ $border-radius: 2px;
 //Shadow
 $bxs: 1px 1px 10px #ddd;
 $bxs-hover: 1px 1px 10px rgba($color-main, 0.6);
-$bxs-box: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+$bxs-box:
+    0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    0 0 4px 0 rgba(0, 0, 0, 0.1);
 
 //Transition
 $trs-menu: all 0.5s cubic-bezier(0.25, 0.8, 0.4, 0.95);
@@ -122,7 +125,7 @@ $text-colors: (
     danger: red,
 );
 
-$bg-color: #fff;
+$bg-color: #fbfbfb;
 
 $bg-colors: (
     light: $color-bg--light,

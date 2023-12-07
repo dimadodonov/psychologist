@@ -29,17 +29,17 @@
     }
 }
 
-
 // font-family
 @mixin font($alias, $family, $name) {
     @font-face {
         font-family: $alias;
         font-style: normal;
         font-weight: normal;
-        src: url('../files/fonts/' + $family + '/' + $name + '.eot') format('eot'),
-            url('../files/fonts/' + $family + '/' + $name + '.ttf') format('ttf'),
-            // url('../files/fonts/' + $family + '/' + $name + '.woff2') format('woff2'),
-            url('../files/fonts/' + $family + '/' + $name + '.woff') format('woff');
+        src:
+            url('../files/fonts/' + $family + '/' + $name + '.woff2')
+                format('woff2'),
+            url('../files/fonts/' + $family + '/' + $name + '.woff')
+                format('woff');
         font-display: swap;
     }
 }

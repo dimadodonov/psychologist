@@ -1,0 +1,21 @@
+body {
+    // min-height: 9000px;
+}
+
+.bg {
+    &-blog-page {
+        background: url('../../build/images/bg-blog-page.jpg') no-repeat;
+        background-color: #fbfbfb;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/* Затем проверяем поддержку WebP */
+@supports (background: url('../../build/images/bg-blog-page.webp')) {
+    .bg-blog-page {
+        background: url('../../build/images/bg-blog-page.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

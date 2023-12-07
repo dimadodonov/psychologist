@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass); // https://github.com/dlmanning/gulp-sass
 
@@ -38,17 +38,11 @@ const smartGridConfig = {
         sm: {
             width: '768px',
         },
+        fp: {
+            width: '576px',
+        },
         xs: {
-            width: '480px',
-        },
-        i8: {
-            width: '414px',
-        },
-        i7: {
-            width: '375px',
-        },
-        i5: {
-            width: '320px',
+            width: '360px',
         },
     },
 };
@@ -83,16 +77,16 @@ const sassBuild = () =>
         .pipe(gulp.dest(config.dest.css, { sourcemaps: config.isDev }));
 
 const smartGridBuild = (callback) => {
-    const smartGridConfig = `./${SMART_GRID_CONFIG_NAME}`;
-    smartGrid(`${config.src.sass}/generated`, smartGridConfig);
+    // const smartGridConfig = `./${SMART_GRID_CONFIG_NAME}`;
+    // smartGrid(`${config.src.sass}/generated`, smartGridConfig);
 
     callback();
 };
 
-export const stylesBuild = gulp.series(smartGridBuild, sassBuild);
-// export const stylesBuild = sassBuild;
+// export const stylesBuild = gulp.series(smartGridBuild, sassBuild);
+export const stylesBuild = sassBuild;
 
 export const stylesWatch = () => {
     gulp.watch(`${config.src.sass}/**/*.scss`, sassBuild);
-    gulp.watch(`./${SMART_GRID_CONFIG_NAME}`, smartGridBuild);
+    // gulp.watch(`./${SMART_GRID_CONFIG_NAME}`, smartGridBuild);
 };

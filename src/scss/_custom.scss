@@ -1,0 +1,156 @@
+.form {
+    &-item {
+        &-email {
+            margin-bottom: 25px;
+        }
+    }
+
+    &-subscribe {
+        position: relative;
+
+        &__btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 260px;
+            height: 56px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 260px;
+                height: 56px;
+                transform: translateY(-50%);
+                border: none;
+                border-radius: 28px;
+                background: linear-gradient(
+                    174deg,
+                    #53c4d0 3.78%,
+                    #008a99 94.73%
+                );
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                z-index: 10;
+                width: 30px;
+                height: 30px;
+                transform: translateY(-50%);
+                background: url('/build/files/icons/svg/icon-pluse-subscribe.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 30px 30px;
+            }
+
+            input[type='submit'] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                right: 0;
+                left: 0;
+                z-index: 20;
+                width: 100%;
+                height: 100%;
+                border: none;
+                background: transparent;
+
+                color: #fff;
+                font-family: $f-bold;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 32px;
+                text-align: center;
+
+                text-transform: uppercase;
+            }
+        }
+
+        input[type='text'] {
+            flex-shrink: 0;
+            width: 760px;
+            height: 56px;
+            padding-left: 57px;
+            border: 0.287px solid #666;
+            border-radius: 28.688px;
+            background: #fff
+                url('/build/files/icons/svg/icon-mail-subscribe.svg') no-repeat;
+            background-position: 25px 15px;
+            background-size: 22px 22px;
+
+            @include placeholder() {
+                opacity: 1;
+                color: #666;
+                font-family: $f-light;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 17.213px;
+            }
+        }
+
+        input[type='checkbox'] {
+            position: relative;
+            z-index: 10;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            border: 1px solid #959595;
+            border-radius: 2px;
+            background-color: #fff;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                width: 10px;
+                height: 10px;
+                transform: translate(-50%, -50%);
+                transition: $trs;
+                background: url('/build/files/icons/svg/icon-form-success.svg')
+                    no-repeat;
+                background-position: center center;
+                background-size: 10px 10px;
+            }
+
+            &:hover::before {
+                opacity: 0.4;
+            }
+
+            &:checked::before {
+                opacity: 1;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            cursor: pointer;
+
+            span {
+                color: #959595;
+                font-family: $f-light;
+                font-size: 18px;
+                line-height: normal;
+
+                @include xs-block() {
+                    font-size: 14px;
+                }
+
+                a {
+                    color: #959595;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
