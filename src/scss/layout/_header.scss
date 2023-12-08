@@ -2,19 +2,13 @@
     position: relative;
 
     &__wrap {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-        max-width: 1160px;
-        margin: 0 auto;
 
-        @include sm-block() {
-            max-width: 620px;
-        }
-
-        @include xs-block() {
-            max-width: 460px;
+        @include lg-block() {
+            justify-content: center;
         }
     }
 
@@ -26,18 +20,133 @@
         background: #fff;
         box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
         gap: 14px;
+
+        @include lg-block() {
+            position: absolute;
+            top: 13px;
+            right: 0;
+        }
+
+        @include md-block() {
+            right: 20px;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        @include sm-block() {
+            right: 20px;
+        }
+
+        @include xs-block() {
+            right: 30px;
+        }
+
+        img {
+            @include md-block() {
+                width: 32px;
+                height: 32px;
+            }
+
+            @include sm-block() {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        span {
+            color: #303030;
+
+            @include lg-block() {
+                font-size: 14px;
+            }
+
+            @include md-block() {
+                display: none;
+            }
+        }
+    }
+
+    &-menu {
+        display: none;
+        align-items: center;
+        padding: 7px 25.75px 7px 7px;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
+        gap: 14px;
+
+        @include lg-block() {
+            position: absolute;
+            top: 13px;
+            left: 0;
+            display: flex;
+        }
+
+        @include md-block() {
+            left: 20px;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        @include sm-block() {
+            left: 20px;
+        }
+
+        @include xs-block() {
+            left: 30px;
+        }
+
+        .humburger {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
+
+            @include md-block() {
+                width: 32px;
+                height: 32px;
+                background: #fff;
+            }
+
+            @include sm-block() {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        span {
+            color: #303030;
+
+            @include md-block() {
+                display: none;
+            }
+
+            @include sm-block() {
+                display: none;
+            }
+        }
     }
 
     &-logo {
-        // img {
-        //     box-shadow: 0 0 1px rgb(122, 123, 120);
-        // }
+        width: 210px;
+
+        @include md-block() {
+            width: 170px;
+        }
+
+        @include xs-block() {
+            width: 162px;
+        }
     }
 
     nav {
         width: 460px;
 
-        @include sm-block() {
+        @include xl-block() {
+            width: 365px;
+        }
+
+        @include to(1024px) {
             display: none;
         }
 
@@ -48,6 +157,7 @@
             li {
                 a {
                     color: #303030;
+                    font-size: 14px;
                 }
             }
         }

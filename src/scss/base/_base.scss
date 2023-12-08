@@ -86,23 +86,39 @@ label {
 //.main
 
 .container {
-    max-width: 1160px;
-    margin: 0 auto;
-
-    @include md-block() {
-        max-width: 940px;
-    }
-
-    @include sm-block() {
-        max-width: 620px;
-    }
-
-    @include fp-block() {
-        max-width: 460px;
-    }
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
     @include xs-block() {
-        max-width: 300px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    @include from(375px) {
+        max-width: 375px;
+    }
+
+    @include from(576px) {
+        max-width: 576px;
+    }
+
+    @include from(768px) {
+        max-width: 768px;
+    }
+
+    @include from(1024px) {
+        max-width: 960px;
+    }
+
+    @include from(1200px) {
+        max-width: 1140px;
+    }
+
+    @include from(1440px) {
+        max-width: 1230px;
     }
 }
 

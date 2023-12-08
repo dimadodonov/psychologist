@@ -28,21 +28,27 @@ const smartGridConfig = {
         fields: '20px',
     },
     breakPoints: {
-        lg: {
-            width: '1366px' /* -> @media (max-width: 1100px) */,
+        xxl: {
+            width: '1440px' /* -> @media (max-width: 1100px) */,
         },
-        md: {
+        xl: {
+            width: '1200px' /* -> @media (max-width: 1100px) */,
+        },
+        lg: {
             width: '1024px',
             // fields: '15px' /* set fields only if you want to change container.fields */
         },
-        sm: {
+        md: {
             width: '768px',
         },
-        fp: {
+        sm: {
             width: '576px',
         },
         xs: {
-            width: '360px',
+            width: '375px',
+        },
+        xxs: {
+            width: '0',
         },
     },
 };
