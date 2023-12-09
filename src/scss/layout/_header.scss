@@ -73,6 +73,7 @@
         border-radius: 30px;
         background: #fff;
         box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
+        cursor: pointer;
         gap: 14px;
 
         @include lg-block() {
@@ -96,7 +97,10 @@
             left: 30px;
         }
 
-        .humburger {
+        &__hamburger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 40px;
             height: 40px;
             border-radius: 20px;
@@ -111,6 +115,88 @@
             @include sm-block() {
                 width: 30px;
                 height: 30px;
+            }
+        }
+
+        .hamburger,
+        .hamburger::after,
+        .hamburger::before {
+            width: 24px;
+            height: 2px;
+            border-radius: 2px;
+        }
+
+        .hamburger {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0ms 300ms;
+            background: #fff;
+
+            @include md-block() {
+                background: linear-gradient(
+                    174deg,
+                    #53c4d0 3.78%,
+                    #008a99 94.73%
+                );
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 8px;
+                left: 0;
+                transition:
+                    bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                background: #fff;
+
+                @include md-block() {
+                    background: linear-gradient(
+                        174deg,
+                        #53c4d0 3.78%,
+                        #008a99 94.73%
+                    );
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 0;
+                transition:
+                    top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                background: #fff;
+
+                @include md-block() {
+                    background: linear-gradient(
+                        174deg,
+                        #53c4d0 3.78%,
+                        #008a99 94.73%
+                    );
+                }
+            }
+
+            &.animate {
+                background: rgba(255, 255, 255, 0);
+
+                &::after {
+                    top: 0;
+                    transform: rotate(45deg);
+                    transition:
+                        top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                        transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+
+                &::before {
+                    bottom: 0;
+                    transform: rotate(-45deg);
+                    transition:
+                        bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                        transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
             }
         }
 

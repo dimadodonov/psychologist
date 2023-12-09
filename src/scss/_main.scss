@@ -1,42 +1,36 @@
-body {
-    // min-height: 9000px;
+// .bg {
+//     &-blog {
+//         &-page {
+//             background: url('../../build/images/bg-blog-page.jpg') no-repeat;
+//             background-color: #fbfbfb;
+//             background-repeat: no-repeat;
+//             background-size: contain;
+//         }
 
-    background-color: #fbfbfb;
-}
+//         &-archive {
+//             background: url('../../build/images/bg-blog-archive.jpg') no-repeat;
+//             background-color: #fbfbfb;
+//             background-repeat: no-repeat;
+//             background-size: 1920px 3057px;
+//         }
+//     }
+// }
 
-.bg {
-    &-blog {
-        &-page {
-            background: url('../../build/images/bg-blog-page.jpg') no-repeat;
-            background-color: #fbfbfb;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
+// /* Затем проверяем поддержку WebP */
+// @supports (background: url('../../build/images/bg-blog-page.webp')) {
+//     .bg-blog-page {
+//         background: url('../../build/images/bg-blog-page.webp');
+//         background-color: #fbfbfb;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
 
-        &-archive {
-            background: url('../../build/images/bg-blog-archive.jpg') no-repeat;
-            background-color: #fbfbfb;
-            background-repeat: no-repeat;
-            background-size: 1920px 3057px;
-        }
-    }
-}
-
-/* Затем проверяем поддержку WebP */
-@supports (background: url('../../build/images/bg-blog-page.webp')) {
-    .bg-blog-page {
-        background: url('../../build/images/bg-blog-page.webp');
-        background-color: #fbfbfb;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-}
-
-@supports (background: url('../../build/images/bg-blog-archive.webp')) {
-    .bg-blog-archive {
-        background: url('../../build/images/bg-blog-archive.webp');
-        background-color: #fbfbfb;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-}
+// @supports (background: url('../../build/images/bg-blog-archive.webp')) {
+//     .bg-blog-archive {
+//         background: url('../../build/images/bg-blog-archive.webp');
+//         background-color: #fbfbfb;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
