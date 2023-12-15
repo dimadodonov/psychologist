@@ -1,0 +1,195 @@
+.about {
+    position: relative;
+    padding-bottom: 50px;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 130px;
+    }
+
+    &__col {
+        position: relative;
+        width: 50%;
+
+        &:last-child {
+            width: calc(50% - 30px);
+            max-width: 560px;
+            margin-left: auto;
+        }
+    }
+
+    &-desc {
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        z-index: 10;
+        width: 100%;
+        padding-left: 60px;
+        transform: translateX(-50%);
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -15px;
+            bottom: -5px;
+            flex-shrink: 0;
+            width: 187.768px;
+            height: 63.994px;
+            transform: rotate(-28.988deg);
+            background: url('/build/files/icons/svg/icon--about-arrow.svg')
+                no-repeat;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 562.258px;
+            height: 94px;
+            transform: translate(-50%, -50%);
+            background: url('/build/files/icons/svg/section-about-desc.svg')
+                no-repeat;
+        }
+
+        &__name {
+            position: relative;
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
+            font-family: $f-semibold;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 131.8%;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &__bio {
+            position: relative;
+            color: #272727;
+            font-family: $f;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        top: -120px;
+        left: -230px;
+        width: 938px;
+        height: 697px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            width: 780px;
+            height: 79px;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) 0%,
+                #fff 100%
+            );
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: 100%;
+            max-height: 697px;
+            object-position: center;
+            object-fit: contain;
+        }
+    }
+
+    blockquote {
+        position: relative;
+        margin-bottom: 30px;
+        color: #4f4f52;
+        font-family: $f;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 23.4px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            left: -55px;
+            z-index: -1;
+            width: 82px;
+            height: 70px;
+            background: url('/build/files/icons/svg/icon--about-blockquote.svg')
+                no-repeat;
+            background-size: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -25px;
+            bottom: -50px;
+            width: 82px;
+            height: 70px;
+            transform: rotate(-180deg);
+            background: url('/build/files/icons/svg/icon--about-blockquote.svg')
+                no-repeat;
+            background-size: cover;
+        }
+
+        b {
+            color: #4f4f52;
+            font-family: $f-semibold;
+            font-weight: normal;
+        }
+    }
+
+    ul {
+        padding: 30px 35px;
+        border-radius: 15px;
+        background: linear-gradient(
+            91deg,
+            rgba(255, 255, 255, 0.79) 4.47%,
+            #fff 100%
+        );
+        box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
+
+        li {
+            position: relative;
+            padding-left: 23px;
+            font-family: $f-light;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: 0;
+                z-index: 10;
+                width: 8px;
+                height: 8px;
+                border-radius: 16px;
+                background: #5ab3c9;
+            }
+
+            & + li {
+                margin-top: 10px;
+            }
+
+            b {
+                color: #4f4f52;
+                font-family: $f-semibold;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+// .about

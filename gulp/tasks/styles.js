@@ -28,9 +28,6 @@ const smartGridConfig = {
         fields: '20px',
     },
     breakPoints: {
-        xxl: {
-            width: '1440px' /* -> @media (max-width: 1100px) */,
-        },
         xl: {
             width: '1200px' /* -> @media (max-width: 1100px) */,
         },
@@ -46,9 +43,6 @@ const smartGridConfig = {
         },
         xs: {
             width: '375px',
-        },
-        xxs: {
-            width: '0',
         },
     },
 };

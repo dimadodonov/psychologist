@@ -114,11 +114,7 @@ label {
     }
 
     @include from(1200px) {
-        max-width: 1140px;
-    }
-
-    @include from(1440px) {
-        max-width: 1230px;
+        max-width: 1160px;
     }
 }
 

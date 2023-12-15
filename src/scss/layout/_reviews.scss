@@ -1,0 +1,159 @@
+.reviews {
+    margin-top: 90px;
+
+    .swiper {
+        &-reviews {
+            overflow: visible;
+        }
+
+        &-slide {
+            transition: $trs;
+
+            &:not(.swiper-slide-visible) {
+                transform: translateY(-20px);
+            }
+        }
+
+        &-pagination {
+            &__wrap {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 150px;
+                margin: 86px auto 0;
+            }
+
+            &-bullets {
+                position: relative;
+                top: 0;
+                bottom: auto;
+                left: auto !important;
+                transform: translateX(0) !important;
+            }
+
+            &-bullet {
+                opacity: 1;
+                background: #e1e1e1;
+
+                &-active {
+                    opacity: 1;
+                    background: #5ab3c9;
+                }
+            }
+        }
+
+        &-btn {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            transform: translateY(-50%);
+            border-radius: 16px;
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
+            cursor: pointer;
+
+            svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &-btn-prev {
+            left: 0;
+        }
+
+        &-btn-next {
+            right: 0;
+        }
+    }
+
+    &-item {
+        position: relative;
+        padding: 40px 35px 30px 40px;
+        border: 1px solid #eaeaea;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 16px 51px 0 rgba(0, 0, 0, 0.11);
+
+        @include lg-block() {
+            padding: 30px 20px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            width: 51.377px;
+            height: 44.037px;
+            transform: rotate(-180deg);
+            background: url('/build/files/icons/svg/icon--about-blockquote.svg')
+                no-repeat;
+            background-size: cover;
+
+            @include sm-block() {
+                display: none;
+            }
+        }
+
+        &__desc {
+            color: #363434;
+            font-size: 15px;
+            font-style: normal;
+            line-height: 24px;
+
+            @include sm-block() {
+                font-size: 13px;
+                line-height: 16.9px;
+            }
+        }
+
+        &__user {
+            display: flex;
+            align-items: center;
+            margin-top: 60px;
+            gap: 20px;
+
+            @include sm-block() {
+                margin-top: 25px;
+            }
+
+            span {
+                color: #101820;
+                font-family: $f-medium;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 21px;
+
+                @include sm-block() {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__avatar {
+            width: 69px;
+            height: 69px;
+            overflow: hidden;
+            border-radius: 69px;
+
+            @include lg-block() {
+                width: 52px;
+                height: 52px;
+                border-radius: 52px;
+            }
+
+            img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+}

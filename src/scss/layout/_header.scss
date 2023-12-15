@@ -15,7 +15,7 @@
     &__callback {
         display: flex;
         align-items: center;
-        padding: 7px 25.75px 7px 7px;
+        padding: 7px 21.75px 7px 7px;
         border-radius: 30px;
         background: #fff;
         box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
@@ -55,6 +55,7 @@
 
         span {
             color: #303030;
+            font-size: 14px;
 
             @include lg-block() {
                 font-size: 14px;
@@ -214,36 +215,97 @@
     }
 
     &-logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 210px;
+        height: 78px;
+        font-size: 14px;
+        text-align: center;
 
-        @include md-block() {
-            width: 170px;
+        @include lg-block() {
+            width: 154.163px;
+            height: 63.288px;
+            font-size: 12px;
         }
 
-        @include xs-block() {
-            width: 162px;
+        @include md-block() {
+            width: 152px;
+            height: 61px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: -1;
+            width: 210px;
+            height: 93px;
+            transform: translateX(-50%);
+            background: url('/build/files/icons/svg/logo-bg.svg') center;
+            background-repeat: no-repeat;
+            pointer-events: none;
+
+            @include lg-block() {
+                width: 170px;
+                height: 75px;
+                background-size: cover;
+            }
+
+            @include md-block() {
+                width: 162px;
+                height: 70px;
+                background-size: cover;
+            }
+        }
+
+        &__text {
+            color: $color-text;
         }
     }
 
     nav {
-        width: 460px;
+        display: flex;
+        align-items: center;
+        max-width: 460px;
 
         @include xl-block() {
-            width: 365px;
+            max-width: 365px;
         }
 
         @include to(1024px) {
             display: none;
         }
 
+        &.nav-home {
+            max-width: 580px;
+        }
+
         ul {
             display: flex;
             justify-content: space-between;
+            margin: 0;
+            padding-left: 0;
 
             li {
+                & + li {
+                    margin-left: 50px;
+
+                    @include xl-block() {
+                        margin-left: 30px;
+                    }
+                }
+
                 a {
                     color: #303030;
                     font-size: 14px;
+                    white-space: nowrap;
+
+                    @include xl-block() {
+                        font-size: 12px;
+                    }
                 }
             }
         }

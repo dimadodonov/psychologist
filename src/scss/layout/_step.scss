@@ -1,0 +1,80 @@
+.step {
+    position: relative;
+    margin-top: 50px;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+
+    &-item {
+        width: calc(1 / 4 * 100% - 40px);
+        margin: 0 20px;
+
+        &:nth-child(2) {
+            .step-item__number::before {
+                transform: translate(-10px, -40px) rotate(180deg);
+            }
+        }
+
+        &:nth-child(4) {
+            .step-item__number::before {
+                display: none;
+            }
+        }
+
+        &__number {
+            position: relative;
+            display: inline-block;
+            padding: 0 20px;
+            font-family: $f-bold;
+            font-size: 92px;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: uppercase;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 60px;
+                left: 100%;
+                width: 156px;
+                height: 20px;
+                margin-left: -10px;
+                background: url('/build/files/icons/svg/step-line.svg')
+                    no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &__desc {
+            margin-top: -55px;
+            padding: 25px 30px 25px 20px;
+            border-radius: 10px;
+            background: linear-gradient(
+                91deg,
+                rgba(255, 255, 255, 0.79) 4.47%,
+                #fff 100%
+            );
+            box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
+
+            color: #4f4f52;
+
+            font-family: $f;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px;
+            min-height: 175px;
+            backdrop-filter: blur(5.5px);
+
+            b {
+                font-family: $f-semibold;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+// .step

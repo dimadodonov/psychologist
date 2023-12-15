@@ -3,14 +3,14 @@
 @import 'base/all';
 
 // Libs
-// @import 'swiper/swiper-bundle';
+@import 'swiper/swiper-bundle';
 
 // Customization libs
 @import 'custom';
 
 // Import site components
-@import 'components/breadcrumbs';
-@import 'components/pagination';
+// @import 'components/breadcrumbs';
+// @import 'components/pagination';
 @import 'components/buttons';
 @import 'components/input';
 
@@ -18,10 +18,21 @@
 @import 'main';
 
 // Import site layouts
+@import 'layout/about';
+@import 'layout/faq';
 @import 'layout/footer';
+@import 'layout/form';
 @import 'layout/header';
+@import 'layout/numbersabout';
+@import 'layout/psychologist';
+@import 'layout/psychotype';
+@import 'layout/quickresults';
+@import 'layout/reviews';
+@import 'layout/section';
 @import 'layout/sidebar';
+@import 'layout/step';
 
 // Import pages
+@import 'pages/archive';
 @import 'pages/blog';
 @import 'pages/page';

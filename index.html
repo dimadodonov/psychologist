@@ -7,17 +7,33 @@
         <title>HTML</title>
         <link rel="stylesheet" href="/build/css/app.min.css" />
     </head>
-    <body class="bg-blog-page">
+    <body class="bg-home">
         <header class="header">
-            <div class="header__wrap">
+            <div class="header__wrap container">
+                <div class="header-menu">
+                    <div class="header-menu__hamburger">
+                        <div class="hamburger"></div>
+                    </div>
+                    <span>Меню</span>
+                </div>
                 <a class="header-logo" href="/">
-                    <img src="/build/files/icons/svg/logo.svg" alt="Alt" />
+                    <span class="header-logo__text"
+                        >Команда психологов<br />
+                        Ольги Роменской</span
+                    >
                 </a>
-                <nav>
+                <nav class="nav-home">
                     <ul>
-                        <li><a href="/psychologists.html">Психологи</a></li>
-                        <li><a href="/faq.html">Вопрос/Ответ</a></li>
-                        <li><a href="/reviews.html">Отзывы</a></li>
+                        <li>
+                            <a href="/index-psychologist.html">Психологи</a>
+                        </li>
+                        <li><a href="">Вопрос/Ответ</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li>
+                            <a href="/index-corp.html"
+                                >Корпоративным клиентам</a
+                            >
+                        </li>
                     </ul>
                 </nav>
                 <a class="header__callback" href="#">
@@ -29,272 +45,1829 @@
                 </a>
             </div>
         </header>
-        <main class="main blog">
-            <div class="container">
-                <div class="blog-tag">
-                    <div class="blog-tag__item">Депрессия</div>
-                    <div class="blog-tag__item">Выгорание</div>
-                </div>
-                <div class="blog__row">
-                    <div class="blog__content">
-                        <h1 class="gradient">
-                            Все ограничения — в голове: что мешает тебе больше
-                            зарабатывать
+        <div class="page-wrap home">
+            <section class="section section-intro hidden">
+                <div class="section-intro__wrap">
+                    <div class="section-intro__col">
+                        <h1>
+                            Решите свой запрос <br />за 1–2 сеанса с психологом
+                            <br />команды Olly_team
+                            <ins class="section-intro__online">онлайн</ins>
                         </h1>
-                        <div class="blog__thumbnail">
-                            <img src="/build/images/blog/post-1.jpg" alt="" />
-                        </div>
+
                         <blockquote>
-                            Какую роль в вашем доходе играют родители, энергия и
-                            страхи.
+                            Авторская методика Quick Result позволяет получить
+                            результат уже после первого сеанса по любому
+                            психологическому запросу или психосоматике
                         </blockquote>
-                        <p>
-                            Развиваться, расти в финансовом плане и жить в
-                            комфортных материальных условиях хочет каждый. Но
-                            получается это далеко не у всех.
-                        </p>
-                        <p>
-                            Что мешает зарабатывать деньги легко и с
-                            удовольствием, рассказала Ольга Роменская, психолог
-                            и автор техники Quick Results.
-                        </p>
-                        <p>
-                            К росту в деньгах способны абсолютно все. Достаточно
-                            вспомнить, как вы выросли со своей первой зарплаты,
-                            во сколько раз и за какое время. У вас уже
-                            получилось! Но как двигаться дальше?
-                        </p>
-                        <p>
-                            Есть базовые принципы роста дохода. В разное время
-                            все проходят примерно одни и те же стадии: небольшой
-                            материальный рост в арифметической прогрессии,
-                            затем, возможно, в геометрической, потом —
-                            финансовое плато. А после него в идеале — снова
-                            волна роста и развития. Но что, если период плато
-                            слишком затянулся?
-                        </p>
 
-                        <h2>Уровень энергии <br />— это уровень достатка</h2>
-                        <p>
-                            Между энергией жизни и денежным потоком есть прямая
-                            взаимосвязь. Когда в вас много жизни, то и деньги
-                            будут — ровно столько, насколько вы энергичны.
-                        </p>
-                        <p>
-                            Дело даже не в конкретных суммах, а в отношении к
-                            ним. Можно обладать миллионами и обесценивать свои
-                            достижения, считать, что этого мало. И мало, в таком
-                            случае, будет всегда. Зажигайте жизнь внутри себя,
-                            запускайте энергию и денег будет достаточно.
-                        </p>
-                        <p>
-                            Среди женщин довольно популярно желание: хочу, чтобы
-                            мужчина зарабатывал больше меня, обеспечивал, решал
-                            вопросы, одаривал. Как только вы отпускаете идею,
-                            что деньги должны приходить к вам через мужчину,
-                            финансы начинают идти легко. Когда вы отдаете миру
-                            что-то ценное — например, ваш ресурс — мир
-                            обязательно ответит щедростью.
-                        </p>
-                        <h2>Как связаны родители и доход</h2>
-                        <p>
-                            Иногда деньги не приходят, потому что вы выписали
-                            себе неоплатный долг перед родителями. И постоянно
-                            ощущаете, что должны гору подарков и благ маме или
-                            папе.
-                        </p>
-                        <p>
-                            Бывает и так, что мы что-то не добрали от родителей
-                            или до сих пор чего-то ждем от них. Соответственно,
-                            не берем для себя сами все необходимое из мира.
-                            Когда родительский вопрос открыт, невозможно быть
-                            полностью обеспеченным. Будет либо всегда мало, либо
-                            деньги будут непостоянными.
-                        </p>
-                        <h2>Страх потерять деньги</h2>
-                        <p>
-                            У некоторых стоит блок на большие деньги, так как на
-                            подсознательном уровне есть страх их потерять. Такие
-                            люди стараются оградить себя от травмы потери и
-                            относятся к серьезным суммам, как к выигрышу в
-                            лотерею: не пытаясь приумножить капитал, а пуская
-                            приличные суммы по ветру.
-                        </p>
-                        <p>
-                            Страх неудачи парализует активность и желание
-                            зарабатывать больше. Интересно, что большинство
-                            предпринимателей по своей сути оптимисты. Когда они
-                            придумывают новую идею, то размышляют не о рисках и
-                            возможном провале, а о возможностях для реализации
-                            проекта. Если этот страх вам знаком, попробуйте
-                            переключить мозг с картин фатальной неудачи на поиск
-                            необходимых интеллектуальных, физических и
-                            психологических ресурсов для достижения целей.
-                        </p>
-                        <h2>Все ответы в голове</h2>
-                        <p>
-                            Важно понять, что все ограничения и пределы
-                            находятся только в вашей голове. Это касается не
-                            только денег, но и успеха, предназначения и наших
-                            сильных сторон, которые мы порой так ловко
-                            обесцениваем.
-                        </p>
-                        <p>
-                            Да, иногда мир сопротивляется нам — но ровно
-                            настолько, сколько мы способны преодолеть. Вопрос
-                            лишь в том, какой путь вы готовы пройти к своей цели
-                            и ваша ли эта цель? Удивительно, как часто мы не
-                            знаем, в чем нуждаемся: в головах звучат чужие
-                            лозунги, мечты и цели.
-                        </p>
-                        <p>
-                            Бывает так, что вы оказываетесь первой в своей
-                            родовой системе, достигая высоких материальных
-                            результатов. Истинная цель всегда получает мощный
-                            отклик. Иногда для ее достижения приходится
-                            выдержать много испытаний, но для тех, кто идет
-                            первым, всегда больше сил и ресурса.
-                        </p>
-                        <h2>Деньги — это не все</h2>
-                        <p>
-                            Деньги довольно часто являются замещающей фигурой. В
-                            финансовом вопросе замешано много чувств и ожиданий.
-                            Многим знакомы мысли: когда у меня будет нужный
-                            доход, я стану свободной, независимой, уверенной,
-                            почувствую себя в безопасности, отдохну. Нужно
-                            стремиться к новой цели, и тогда жизнь изменится.
-                            Сначала работа мечты, затем машина мечты и так
-                            далее.
-                        </p>
-                        <p>
-                            Но деньги нейтральны. Они не несут в себе избавления
-                            от внутренних проблем и глубоких вопросов. И счастье
-                            приходит к тому, кто это четко понимает.
-                        </p>
+                        <div class="section-intro__numbers numbers">
+                            <div class="numbers-item">
+                                <div class="numbers-item__title one">40</div>
+                                <div class="numbers-item__desc">
+                                    психологов-практиков, готовых помочь решить
+                                    ваш запрос
+                                </div>
+                            </div>
+                            <div class="numbers-item">
+                                <div class="numbers-item__title two">
+                                    >10 000
+                                </div>
+                                <div class="numbers-item__desc">
+                                    клиентов получили психологическую помощь
+                                </div>
+                            </div>
+                            <div class="numbers-item">
+                                <div class="numbers-item__title tree">
+                                    <ins>от</ins> 3 000 <ins>руб</ins>
+                                </div>
+                                <div class="numbers-item__desc">
+                                    стоимость консультации
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="section-intro__col">
+                        <div class="section-intro-slider">
+                            <div class="section-intro-slider__title">
+                                Выбери одного <br />из 50+ психологов–практиков
+                            </div>
+                            <div class="section-intro-slider__inner">
+                                <strong>50+</strong>
+                                <span>Психологов– <br />практиков</span>
+                            </div>
 
-                    <div class="blog__sidebar">
-                        <div class="sidebar-item">
-                            <div class="sidebar-item__title">Читай также</div>
-                            <div class="blog-loop">
-                                <div class="blog-item">
-                                    <div class="blog-item__img">
-                                        <img
-                                            src="/build/images/blog/post-2.jpg"
-                                            alt=""
-                                        />
+                            <div
+                                class="section-intro-slider section-intro-swiper swiper"
+                            >
+                                <div class="swiper-wrapper">
+                                    <div
+                                        class="swiper-slide psychologist-card swiper-slide-active"
+                                    >
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="blog-item__content">
-                                        <div class="blog-tag">
-                                            <div class="blog-tag__item">
-                                                Депрессия
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
                                             </div>
-                                            <div class="blog-tag__item">
-                                                Выгорание
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
                                             </div>
                                         </div>
-                                        <div class="blog-item__title">
-                                            «Ничего не хочу»: 7 способов вернуть
-                                            жизненные силы и настроение
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
                                         </div>
-                                        <div class="blog-item__blockquote">
-                                            Как выйти из этого состояния и
-                                            проживать свою истинную жизнь,
-                                            наполненную смыслами, ощущениями и
-                                            радостями
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
                                         </div>
-                                        <div class="blog-item__p">
-                                            Каждый из нас без исключения
-                                            периодически сталкивается с апатией,
-                                            ощущением полного бессилия,
-                                            нежеланием вставать и жить свой день
-                                            как обычно. Что с этим делать,
-                                            рассказывает эксперт-психолог
-                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-btn swiper-btn-prev">
+                                    <svg>
+                                        <use
+                                            xlink:href="/build/files/sprite.svg#icon--arrow-slider-next"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="swiper-btn swiper-btn-next">
+                                    <svg>
+                                        <use
+                                            xlink:href="/build/files/sprite.svg#icon--arrow-slider-prev"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
 
-                                        <div class="blog-item__more">
-                                            <span>Читать полностью</span>
-                                            <img
-                                                src="/build/files/icons/svg/icon-arrow-right.svg"
-                                                alt=""
-                                            />
+                            <a href="#" class="section-intro-slider__play">
+                                <img
+                                    src="/build/files/icons/svg/play.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-intro__btn">
+                    <a href="" class="button-main button-main__accent"
+                        >ПОДОБРАТЬ ПСИХОЛОГА</a
+                    >
+                    <a href="" class="button-main"
+                        >ЗАПИСАТЬСЯ НА ПОВТОРНЫЙ ПРИЕМ</a
+                    >
+                </div>
+            </section>
+
+            <section class="section section-psychotype">
+                <div class="container">
+                    <h2>
+                        Наши психологи проводят сеансы как по психологическим
+                        <br />запросам, так и по психосоматическим заболеваниям
+                    </h2>
+                    <div class="psychotype">
+                        <div class="psychotype-btn__wrap">
+                            <div
+                                class="button button-type button-type__accent"
+                                data-type="one"
+                            >
+                                Психологические запросы
+                            </div>
+                            <div class="button button-type" data-type="two">
+                                Психосоматические заболевания
+                            </div>
+                        </div>
+
+                        <div class="psychotype-sheme" id="one">
+                            <picture>
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-xs.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-xs.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 576px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-sm.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 576px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-sm.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-md.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-md.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 1024px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-lg.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 1024px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-lg.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 1200px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-xl.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 1200px)"
+                                    srcset="
+                                        /build/images/psychotype/one/one-xl.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="/build/images/psychotype/one/one-xl.png"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                        <div
+                            class="psychotype-sheme psychotype-sheme__two hidden"
+                            id="two"
+                        >
+                            <picture>
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-xs.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-xs.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 576px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-sm.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 576px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-sm.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-md.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-md.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 1024px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-lg.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 1024px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-lg.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 1200px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-xl.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 1200px)"
+                                    srcset="
+                                        /build/images/psychotype/two/two-xl.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="/build/images/psychotype/two/two-xl.png"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="psychotype__title">
+                            <ins>и более 100 других запросов,</ins> с которыми
+                            обращаются наши клиенты
+                        </div>
+
+                        <div class="psychotype__link">
+                            <a
+                                href="#"
+                                class="button button-main button-main__accent"
+                            >
+                                ПОДОБРАТЬ ПСИХОЛОГА ПОД МОЙ ЗАПРОС</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-quickresults hidden">
+                <div class="container">
+                    <div class="quickresults">
+                        <div class="quickresults__row">
+                            <div class="quickresults__col">
+                                <div class="quickresults__title">
+                                    Quick Results
+                                </div>
+                                <div class="quickresults__img">
+                                    <img
+                                        src="/build/files/icons/svg/quickresults.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="quickresults__subtitle">
+                                    и <ins>более 100</ins> других техник
+                                </div>
+                            </div>
+                            <div class="quickresults__col">
+                                <div class="quickresults__title">
+                                    Почему методика
+                                    <ins>Quick Results</ins> быстро помогает
+                                    решить запрос?
+                                </div>
+                                <div class="quickresults__desc">
+                                    <p>
+                                        В основе методики лежит более 100
+                                        техник, которые подбирают психологи
+                                        индивидуально под ваш запрос и
+                                        переключаются между ними в рамках одного
+                                        сеанса.
+                                    </p>
+                                    <p>
+                                        Это позволяет
+                                        <b>решать запрос за 1-2 сеанса</b>
+                                        вместо нескольких лет терапии.
+                                    </p>
+                                </div>
+                                <a
+                                    href=""
+                                    class="button button-main button-main__accent"
+                                    >ПОДОБРАТЬ ПСИХОЛОГА ПОД МОЙ ЗАПРОС</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-about hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>
+                            Давайте <ins>познакомимся</ins> с проектом Olly_team
+                        </h2>
+                    </div>
+                    <div class="about">
+                        <div class="about__wrap">
+                            <div class="about__col">
+                                <div class="about-img">
+                                    <img
+                                        src="/build/images/section/about/section-about-xl.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="about-desc">
+                                    <div class="about-desc__name">
+                                        Ольга Семенихина (Роменская)
+                                    </div>
+                                    <div class="about-desc__bio">
+                                        — основатель и супервизор Olly_team
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__col">
+                                <blockquote>
+                                    Я собрала
+                                    <b>команду из 50+ психологов-практиков,</b
+                                    ><br />
+                                    которые проходят постоянное обучение, чтобы
+                                    приводить <br />наших клиентов к быстрым
+                                    результатам и решать <br />психологические
+                                    вопросы любой сложности
+                                </blockquote>
+
+                                <ul>
+                                    <li>
+                                        <b>Руководитель и основатель</b>
+                                        школы психологов
+                                    </li>
+                                    <li>
+                                        <b>Более 7 000 часов</b> практики с 2018
+                                        года
+                                    </li>
+                                    <li><b>Психолог-педагог</b></li>
+                                    <li>
+                                        <b>Руководитель команды</b>, в которой
+                                        <br />50+ психологов
+                                    </li>
+                                    <li>
+                                        Специалист по психосоматике с
+                                        <b>1 000 кейсов <br />выздоровлений </b>
+                                    </li>
+                                    <li>
+                                        <b
+                                            >Автор запатентованной современной
+                                            психологической техники QR (Quick
+                                            Results)</b
+                                        >, <br />которая позволяет получить
+                                        быстрые результаты <br />в терапии
+                                    </li>
+                                    <li>
+                                        Автор полезных психологических марафонов
+                                        и вебинаров с более
+                                        <b>35 000 участников</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-step hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>
+                            Как проходит
+                            <ins>выбор психолога и работа</ins> с ним
+                        </h2>
+                    </div>
+                    <div class="step">
+                        <div class="step__wrap">
+                            <div class="step-item">
+                                <div class="step-item__number colors-blue">
+                                    01
+                                </div>
+                                <div class="step-item__desc">
+                                    Заполните <b>анкету</b>, которая поможет
+                                    подобрать психолога под ваш запрос
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-item__number colors-green">
+                                    02
+                                </div>
+                                <div class="step-item__desc">
+                                    Выберите <b>психолога</b> и удобное время
+                                    сеанса
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-item__number colors-orange">
+                                    03
+                                </div>
+                                <div class="step-item__desc">
+                                    Оплатите сеанс и получите инструкцию
+                                    <b
+                                        >«Как подготовится к сеансу с
+                                        психологом»</b
+                                    >
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-item__number colors-purple">
+                                    04
+                                </div>
+                                <div class="step-item__desc">
+                                    Подключитесь к сеансу онлайн из тихого и
+                                    спокойного места, в котором вы сможете
+                                    полностью погрузиться в процесс
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-step__btn">
+                        <a
+                            href=""
+                            class="button button-main button-main__accent"
+                            >ПОДОБРАТЬ ПСИХОЛОГА</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-psychologist hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>
+                            Вы можете
+                            <ins>познакомиться с командой наших психологов</ins>
+                            <br />и самостоятельно записаться к одному из них
+                        </h2>
+                    </div>
+                    <div class="psychologist">
+                        <div class="psychologist-switch">
+                            <div
+                                class="psychologist-switch__item active"
+                                data-type="slug"
+                            >
+                                Здоровье
+                            </div>
+                            <div
+                                class="psychologist-switch__item"
+                                data-type="slug"
+                            >
+                                Отношения
+                            </div>
+                            <div
+                                class="psychologist-switch__item"
+                                data-type="slug"
+                            >
+                                Бизнес
+                            </div>
+                            <div
+                                class="psychologist-switch__item"
+                                data-type="slug"
+                            >
+                                Деньги
+                            </div>
+                            <div
+                                class="psychologist-switch__item"
+                                data-type="slug"
+                            >
+                                Парные терапии
+                            </div>
+                        </div>
+                        <div class="psychologist-loop">
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/02.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Астраханцева Алиса
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Деньги</span>
+                                        <span>Психосоматика</span>
+                                        <span>Панические атаки</span>
+                                        <span>Секс</span>
+                                        <span>Женственность</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/IMG_6297.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Ирина Шмитс
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Семейные отношения</span>
+                                        <span>Отсутствие отношений</span>
+                                        <span>Энергия</span>
+                                        <span>Личный рост</span>
+                                        <span>Психосоматика</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/02.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Астраханцева Алиса
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Деньги</span>
+                                        <span>Психосоматика</span>
+                                        <span>Панические атаки</span>
+                                        <span>Секс</span>
+                                        <span>Женственность</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/IMG_6297.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Ирина Шмитс
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Семейные отношения</span>
+                                        <span>Отсутствие отношений</span>
+                                        <span>Энергия</span>
+                                        <span>Личный рост</span>
+                                        <span>Психосоматика</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/02.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Астраханцева Алиса
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Деньги</span>
+                                        <span>Психосоматика</span>
+                                        <span>Панические атаки</span>
+                                        <span>Секс</span>
+                                        <span>Женственность</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/IMG_6297.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Ирина Шмитс
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Семейные отношения</span>
+                                        <span>Отсутствие отношений</span>
+                                        <span>Энергия</span>
+                                        <span>Личный рост</span>
+                                        <span>Психосоматика</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/02.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Астраханцева Алиса
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Деньги</span>
+                                        <span>Психосоматика</span>
+                                        <span>Панические атаки</span>
+                                        <span>Секс</span>
+                                        <span>Женственность</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psychologist-card">
+                                <div
+                                    class="psychologist-card__photo"
+                                    style="
+                                        background-image: URL('/build/images/psychologist/IMG_6297.jpg');
+                                    "
+                                ></div>
+                                <div class="psychologist-card__info">
+                                    <div class="psychologist-card__name">
+                                        Ирина Шмитс
+                                    </div>
+                                    <div class="psychologist-card__tag">
+                                        <span>Семейные отношения</span>
+                                        <span>Отсутствие отношений</span>
+                                        <span>Энергия</span>
+                                        <span>Личный рост</span>
+                                        <span>Психосоматика</span>
+                                    </div>
+                                    <div class="psychologist-card__btn">
+                                        <div
+                                            class="button button-main button-main__min"
+                                        >
+                                            ЗАПИСАТЬСЯ
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="psychologist-btn">
+                            <a href="" class="button button-main"
+                                >ПОКАЗАТЬ ВСЕХ ПСИХОЛОГОВ</a
+                            >
+                        </div>
                     </div>
-                    <div class="blog-choise">
-                        <div class="blog-choise__img">
+                </div>
+            </section>
+
+            <section class="section section-numbersabout hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>
+                            <ins>Цифры о нас</ins>
+                        </h2>
+                    </div>
+                    <div class="numbersabout">
+                        <div class="numbersabout-ul">
+                            <div class="numbersabout-ul-item">
+                                <div
+                                    class="numbersabout-ul-item__title colors-blue"
+                                >
+                                    100%
+                                </div>
+                                <div class="numbersabout-ul-item__desc">
+                                    <b>приватность.</b> Мы гарантируем, что все,
+                                    сказанное вами на терапии, не получит
+                                    огласки
+                                </div>
+                            </div>
+                            <div class="numbersabout-ul-item">
+                                <div
+                                    class="numbersabout-ul-item__title colors-green"
+                                >
+                                    84%
+                                </div>
+                                <div class="numbersabout-ul-item__desc">
+                                    <b>клиентов рекомендуют нас</b>
+                                    своим друзьям и родным и получают за это
+                                    благодарность от них
+                                </div>
+                            </div>
+                            <div class="numbersabout-ul-item">
+                                <div
+                                    class="numbersabout-ul-item__title colors-orange"
+                                >
+                                    9,8<ins>из</ins>10
+                                </div>
+                                <div class="numbersabout-ul-item__desc">
+                                    <b>средняя оценка</b>
+                                    результативности терапий и уровня
+                                    комфортности работы с психологом
+                                </div>
+                            </div>
+                            <div class="numbersabout-ul-item">
+                                <div
+                                    class="numbersabout-ul-item__title colors-purple"
+                                >
+                                    1 – 2
+                                </div>
+                                <div class="numbersabout-ul-item__desc">
+                                    сессии требуется нашим клиентам, чтобы
+                                    <b>решить один психологический запрос</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="numbersabout-img">
                             <img
-                                src="/build/images/blog/blog-choice.png"
+                                src="/build/images/section/numbersabout/images.png"
                                 alt=""
                             />
                         </div>
-                        <div class="blog-choise__wrap">
-                            <div class="blog-choise__proc">87%</div>
-                            <div class="blog-choise__title">
-                                наших клиентов получают результат уже после
-                                первой консультации, за счет
-                            </div>
-                        </div>
-                        <blockquote>
-                            авторской технике QR (Quick Results), которая даёт
-                            быстрые результаты
-                        </blockquote>
-                        <a href="#">ПОДОБРАТЬ ПСИХОЛОГА</a>
                     </div>
-                    <div class="blog-subscribe">
-                        <h2>
-                            <ins>Полезные статьи о психологии</ins> от команды
-                            Olly Team
-                        </h2>
-                        <span>подпишитесь, чтобы не пропустить</span>
-                        <div class="form form-subscribe">
-                            <div class="form-item form-item-email">
-                                <input
-                                    type="text"
-                                    placeholder="Введите вашу почту"
-                                />
-                                <div class="form-subscribe__btn">
-                                    <input type="submit" value="Подписаться" />
+                </div>
+            </section>
+
+            <section class="section section-faq hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>Часто задаваемые вопросы</h2>
+                    </div>
+                    <div class="section-faq__wrap">
+                        <div class="faq">
+                            <div class="faq__collapse-item">
+                                <div class="faq__collapse-item-main">
+                                    <div
+                                        class="faq__collapse-item-header"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseItem1"
+                                    >
+                                        <span class="faq__collapse-item-title"
+                                            >Формат консультаций</span
+                                        >
+                                        <span
+                                            class="faq__collapse-item-btn"
+                                        ></span>
+                                    </div>
+                                    <div
+                                        id="faqCollapseItem1"
+                                        class="collapse faq__collapse-item-content"
+                                    >
+                                        <p>
+                                            Индивидуальная консультация длится
+                                            час, проходит онлайн через
+                                            видеозвонок WhatsApp
+                                        </p>
+                                        <p>
+                                            Онлайн-прием терапевты из команды
+                                            ведут по любым вопросам, кроме
+                                            проработки насилия и панических атак
+                                        </p>
+                                        <p>
+                                            Проработка насилия осуществляется
+                                            очно, длительность консультации 2
+                                            часа. На проработку единичного
+                                            случая насилия необходима одна,
+                                            иногда две консультации
+                                        </p>
+                                        <p>
+                                            Консультации можно проводить в
+                                            режиме онлайн с частотой НЕ чаще
+                                            раза в неделю, в остальном - по
+                                            свободной записи и на ваше
+                                            усмотрение
+                                        </p>
+                                        <p>
+                                            В 80% решение одного запроса
+                                            прорабатывается за 1-2 консультации,
+                                            но следует учитывать индивидуальные
+                                            случаи
+                                        </p>
+                                        <p>
+                                            Проработка панических атак
+                                            происходит очно за 1-2 консультации,
+                                            затем работу можно вести онлайн в
+                                            обычном режиме
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-item">
-                                <label
-                                    ><input
-                                        type="checkbox"
-                                        name="checkbox_one"
-                                        value="0"
-                                        class="checkbox"
-                                        aria-invalid="false"
-                                    /><span class="form-item-label"
-                                        >Согласие с условиями
-                                        <a href="/privacy"
-                                            >обработки персональных данных</a
-                                        ></span
-                                    ></label
-                                >
+                            <div class="faq__collapse-item">
+                                <div class="faq__collapse-item-main">
+                                    <div
+                                        class="faq__collapse-item-header"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseItem2"
+                                    >
+                                        <span class="faq__collapse-item-title"
+                                            >Формат консультаций</span
+                                        >
+                                        <span
+                                            class="faq__collapse-item-btn"
+                                        ></span>
+                                    </div>
+                                    <div
+                                        id="faqCollapseItem2"
+                                        class="collapse faq__collapse-item-content"
+                                    >
+                                        <p>
+                                            Индивидуальная консультация длится
+                                            час, проходит онлайн через
+                                            видеозвонок WhatsApp
+                                        </p>
+                                        <p>
+                                            Онлайн-прием терапевты из команды
+                                            ведут по любым вопросам, кроме
+                                            проработки насилия и панических атак
+                                        </p>
+                                        <p>
+                                            Проработка насилия осуществляется
+                                            очно, длительность консультации 2
+                                            часа. На проработку единичного
+                                            случая насилия необходима одна,
+                                            иногда две консультации
+                                        </p>
+                                        <p>
+                                            Консультации можно проводить в
+                                            режиме онлайн с частотой НЕ чаще
+                                            раза в неделю, в остальном - по
+                                            свободной записи и на ваше
+                                            усмотрение
+                                        </p>
+                                        <p>
+                                            В 80% решение одного запроса
+                                            прорабатывается за 1-2 консультации,
+                                            но следует учитывать индивидуальные
+                                            случаи
+                                        </p>
+                                        <p>
+                                            Проработка панических атак
+                                            происходит очно за 1-2 консультации,
+                                            затем работу можно вести онлайн в
+                                            обычном режиме
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-item">
-                                <label
-                                    ><input
-                                        type="checkbox"
-                                        name="checkbox_two"
-                                        value="1"
-                                        checked="checked"
-                                        class="checkbox"
-                                        aria-invalid="false"
-                                    /><span class="form-item-label"
-                                        >Согласие получать рассылку</span
-                                    ></label
-                                >
+                            <div class="faq__collapse-item">
+                                <div class="faq__collapse-item-main">
+                                    <div
+                                        class="faq__collapse-item-header"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseItem3"
+                                    >
+                                        <span class="faq__collapse-item-title"
+                                            >Формат консультаций</span
+                                        >
+                                        <span
+                                            class="faq__collapse-item-btn"
+                                        ></span>
+                                    </div>
+                                    <div
+                                        id="faqCollapseItem3"
+                                        class="collapse faq__collapse-item-content"
+                                    >
+                                        <p>
+                                            Индивидуальная консультация длится
+                                            час, проходит онлайн через
+                                            видеозвонок WhatsApp
+                                        </p>
+                                        <p>
+                                            Онлайн-прием терапевты из команды
+                                            ведут по любым вопросам, кроме
+                                            проработки насилия и панических атак
+                                        </p>
+                                        <p>
+                                            Проработка насилия осуществляется
+                                            очно, длительность консультации 2
+                                            часа. На проработку единичного
+                                            случая насилия необходима одна,
+                                            иногда две консультации
+                                        </p>
+                                        <p>
+                                            Консультации можно проводить в
+                                            режиме онлайн с частотой НЕ чаще
+                                            раза в неделю, в остальном - по
+                                            свободной записи и на ваше
+                                            усмотрение
+                                        </p>
+                                        <p>
+                                            В 80% решение одного запроса
+                                            прорабатывается за 1-2 консультации,
+                                            но следует учитывать индивидуальные
+                                            случаи
+                                        </p>
+                                        <p>
+                                            Проработка панических атак
+                                            происходит очно за 1-2 консультации,
+                                            затем работу можно вести онлайн в
+                                            обычном режиме
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__collapse-item">
+                                <div class="faq__collapse-item-main">
+                                    <div
+                                        class="faq__collapse-item-header"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseItem4"
+                                    >
+                                        <span class="faq__collapse-item-title"
+                                            >Формат консультаций</span
+                                        >
+                                        <span
+                                            class="faq__collapse-item-btn"
+                                        ></span>
+                                    </div>
+                                    <div
+                                        id="faqCollapseItem4"
+                                        class="collapse faq__collapse-item-content"
+                                    >
+                                        <p>
+                                            Индивидуальная консультация длится
+                                            час, проходит онлайн через
+                                            видеозвонок WhatsApp
+                                        </p>
+                                        <p>
+                                            Онлайн-прием терапевты из команды
+                                            ведут по любым вопросам, кроме
+                                            проработки насилия и панических атак
+                                        </p>
+                                        <p>
+                                            Проработка насилия осуществляется
+                                            очно, длительность консультации 2
+                                            часа. На проработку единичного
+                                            случая насилия необходима одна,
+                                            иногда две консультации
+                                        </p>
+                                        <p>
+                                            Консультации можно проводить в
+                                            режиме онлайн с частотой НЕ чаще
+                                            раза в неделю, в остальном - по
+                                            свободной записи и на ваше
+                                            усмотрение
+                                        </p>
+                                        <p>
+                                            В 80% решение одного запроса
+                                            прорабатывается за 1-2 консультации,
+                                            но следует учитывать индивидуальные
+                                            случаи
+                                        </p>
+                                        <p>
+                                            Проработка панических атак
+                                            происходит очно за 1-2 консультации,
+                                            затем работу можно вести онлайн в
+                                            обычном режиме
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__collapse-item">
+                                <div class="faq__collapse-item-main">
+                                    <div
+                                        class="faq__collapse-item-header"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseItem5"
+                                    >
+                                        <span class="faq__collapse-item-title"
+                                            >Формат консультаций</span
+                                        >
+                                        <span
+                                            class="faq__collapse-item-btn"
+                                        ></span>
+                                    </div>
+                                    <div
+                                        id="faqCollapseItem5"
+                                        class="collapse faq__collapse-item-content"
+                                    >
+                                        <p>
+                                            Индивидуальная консультация длится
+                                            час, проходит онлайн через
+                                            видеозвонок WhatsApp
+                                        </p>
+                                        <p>
+                                            Онлайн-прием терапевты из команды
+                                            ведут по любым вопросам, кроме
+                                            проработки насилия и панических атак
+                                        </p>
+                                        <p>
+                                            Проработка насилия осуществляется
+                                            очно, длительность консультации 2
+                                            часа. На проработку единичного
+                                            случая насилия необходима одна,
+                                            иногда две консультации
+                                        </p>
+                                        <p>
+                                            Консультации можно проводить в
+                                            режиме онлайн с частотой НЕ чаще
+                                            раза в неделю, в остальном - по
+                                            свободной записи и на ваше
+                                            усмотрение
+                                        </p>
+                                        <p>
+                                            В 80% решение одного запроса
+                                            прорабатывается за 1-2 консультации,
+                                            но следует учитывать индивидуальные
+                                            случаи
+                                        </p>
+                                        <p>
+                                            Проработка панических атак
+                                            происходит очно за 1-2 консультации,
+                                            затем работу можно вести онлайн в
+                                            обычном режиме
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__collapse-item">
+                                <div class="faq__collapse-item-main">
+                                    <div
+                                        class="faq__collapse-item-header"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseItem6"
+                                    >
+                                        <span class="faq__collapse-item-title"
+                                            >Формат консультаций</span
+                                        >
+                                        <span
+                                            class="faq__collapse-item-btn"
+                                        ></span>
+                                    </div>
+                                    <div
+                                        id="faqCollapseItem6"
+                                        class="collapse faq__collapse-item-content"
+                                    >
+                                        <p>
+                                            Индивидуальная консультация длится
+                                            час, проходит онлайн через
+                                            видеозвонок WhatsApp
+                                        </p>
+                                        <p>
+                                            Онлайн-прием терапевты из команды
+                                            ведут по любым вопросам, кроме
+                                            проработки насилия и панических атак
+                                        </p>
+                                        <p>
+                                            Проработка насилия осуществляется
+                                            очно, длительность консультации 2
+                                            часа. На проработку единичного
+                                            случая насилия необходима одна,
+                                            иногда две консультации
+                                        </p>
+                                        <p>
+                                            Консультации можно проводить в
+                                            режиме онлайн с частотой НЕ чаще
+                                            раза в неделю, в остальном - по
+                                            свободной записи и на ваше
+                                            усмотрение
+                                        </p>
+                                        <p>
+                                            В 80% решение одного запроса
+                                            прорабатывается за 1-2 консультации,
+                                            но следует учитывать индивидуальные
+                                            случаи
+                                        </p>
+                                        <p>
+                                            Проработка панических атак
+                                            происходит очно за 1-2 консультации,
+                                            затем работу можно вести онлайн в
+                                            обычном режиме
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-form">
+                            <div class="form form-box">
+                                <div class="form__wrap">
+                                    <div class="form__header">
+                                        <div class="form__title">
+                                            <ins>Остались вопросы по</ins>
+                                            выбору психолога?
+                                        </div>
+                                        <div class="form__subtitle">
+                                            С радостью ответим на них!
+                                        </div>
+                                    </div>
+                                    <div class="form__item form__item--name">
+                                        <input
+                                            class="form__input form-control"
+                                            name="recall_name"
+                                            type="text"
+                                            placeholder="Введите ваше имя"
+                                            required=""
+                                        />
+                                    </div>
+                                    <div class="form__item form__item--phone">
+                                        <input
+                                            class="form__input form-control"
+                                            name="recall_phone"
+                                            type="tel"
+                                            placeholder="Введите ваш номер"
+                                            required=""
+                                        />
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form-communication">
+                                            <div
+                                                class="form-communication-title"
+                                            >
+                                                Укажите удобный способ связи:
+                                            </div>
+                                            <div
+                                                class="form-communication-types"
+                                            >
+                                                <div>
+                                                    <input
+                                                        class="form-communication-input"
+                                                        id="whats-app"
+                                                        type="radio"
+                                                        value="Whatsapp"
+                                                        name="communication-type"
+                                                        checked=""
+                                                    />
+                                                    <label
+                                                        class="form-communication-label d-flex flex-column align-items-center"
+                                                        for="whats-app"
+                                                    >
+                                                        <svg
+                                                            class="form-communication-icon"
+                                                        >
+                                                            <use
+                                                                xlink:href="/build/files/sprite.svg#icon--whatsapp"
+                                                            />
+                                                        </svg>
+                                                        <span
+                                                            class="form-communication-name"
+                                                            >WhatsApp</span
+                                                        >
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <input
+                                                        class="form-communication-input"
+                                                        id="telegram"
+                                                        value="telegram"
+                                                        type="radio"
+                                                        name="communication-type"
+                                                    />
+                                                    <label
+                                                        class="form-communication-label d-flex flex-column align-items-center"
+                                                        for="telegram"
+                                                    >
+                                                        <svg
+                                                            class="form-communication-icon"
+                                                        >
+                                                            <use
+                                                                xlink:href="/build/files/sprite.svg#icon--telegram"
+                                                            />
+                                                        </svg>
+                                                        <span
+                                                            class="form-communication-name"
+                                                            >Telegram</span
+                                                        >
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <button
+                                            class="button button-main button-main__accent"
+                                            type="submit"
+                                        >
+                                            Задать вопрос
+                                        </button>
+                                    </div>
+                                    <div class="form__privacy">
+                                        Нажимая кнопку, вы даете согласие
+                                        <a href="#"
+                                            >на обработку персональных данных</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-faq__btn">
+                        <a
+                            href="#"
+                            class="button button-main button-main__accent"
+                            >записаться на терапию</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-reviews hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>
+                            <ins>Более 10 000 человек</ins> нашли психолога
+                            <br />
+                            на нашем сайте. Вот что они говорят о терапии:
+                        </h2>
+                    </div>
+                    <div class="reviews">
+                        <div class="swiper-reviews swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="reviews-item">
+                                        <div class="reviews-item__desc">
+                                            Безумно благодарна за вашу работу!
+                                            Несколько месяцев назад я обратилась
+                                            к психологу из команды Ольги —
+                                            Кристине Упоровой. Мне было сложно
+                                            находиться рядом и общаться с мамой,
+                                            я была агрессивная по отношению к
+                                            ней и меня это беспокоило. Сразу
+                                            после консультации я пришла домой и
+                                            мама в моих глазах стала и светлее,
+                                            и милее. Я начала нормально общаться
+                                            с ней. Есть к чему еще стремиться,
+                                            но улучшение почувствовала сразу.
+                                            Метод не классический, но
+                                            эффективный! А в октябре я иду
+                                            учиться на 1-ую ступень!
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <div class="reviews-item__avatar">
+                                                <img
+                                                    src="/build/images/reviews-avatar.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <span>Ксения, 33 года</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews-item">
+                                        <div class="reviews-item__desc">
+                                            Безумно благодарна за вашу работу!
+                                            Несколько месяцев назад я обратилась
+                                            к психологу из команды Ольги —
+                                            Кристине Упоровой. Мне было сложно
+                                            находиться рядом и общаться с мамой,
+                                            я была агрессивная по отношению к
+                                            ней и меня это беспокоило. Сразу
+                                            после консультации я пришла домой и
+                                            мама в моих глазах стала и светлее,
+                                            и милее. Я начала нормально общаться
+                                            с ней. Есть к чему еще стремиться,
+                                            но улучшение почувствовала сразу.
+                                            Метод не классический, но
+                                            эффективный! А в октябре я иду
+                                            учиться на 1-ую ступень!
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <div class="reviews-item__avatar">
+                                                <img
+                                                    src="/build/images/reviews-avatar.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <span>Ксения, 33 года</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews-item">
+                                        <div class="reviews-item__desc">
+                                            Безумно благодарна за вашу работу!
+                                            Несколько месяцев назад я обратилась
+                                            к психологу из команды Ольги —
+                                            Кристине Упоровой. Мне было сложно
+                                            находиться рядом и общаться с мамой,
+                                            я была агрессивная по отношению к
+                                            ней и меня это беспокоило. Сразу
+                                            после консультации я пришла домой и
+                                            мама в моих глазах стала и светлее,
+                                            и милее. Я начала нормально общаться
+                                            с ней. Есть к чему еще стремиться,
+                                            но улучшение почувствовала сразу.
+                                            Метод не классический, но
+                                            эффективный! А в октябре я иду
+                                            учиться на 1-ую ступень!
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <div class="reviews-item__avatar">
+                                                <img
+                                                    src="/build/images/reviews-avatar.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <span>Ксения, 33 года</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews-item">
+                                        <div class="reviews-item__desc">
+                                            Безумно благодарна за вашу работу!
+                                            Несколько месяцев назад я обратилась
+                                            к психологу из команды Ольги —
+                                            Кристине Упоровой. Мне было сложно
+                                            находиться рядом и общаться с мамой,
+                                            я была агрессивная по отношению к
+                                            ней и меня это беспокоило. Сразу
+                                            после консультации я пришла домой и
+                                            мама в моих глазах стала и светлее,
+                                            и милее. Я начала нормально общаться
+                                            с ней. Есть к чему еще стремиться,
+                                            но улучшение почувствовала сразу.
+                                            Метод не классический, но
+                                            эффективный! А в октябре я иду
+                                            учиться на 1-ую ступень!
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <div class="reviews-item__avatar">
+                                                <img
+                                                    src="/build/images/reviews-avatar.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <span>Ксения, 33 года</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination__wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-btn swiper-btn-prev">
+                                    <svg>
+                                        <use
+                                            xlink:href="/build/files/sprite.svg#icon--arrow-slider-next"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="swiper-btn swiper-btn-next">
+                                    <svg>
+                                        <use
+                                            xlink:href="/build/files/sprite.svg#icon--arrow-slider-prev"
+                                        />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </section>
+
+            <section class="section section-psychologist-selection hidden">
+                <div class="psychologist-selection__wrap">
+                    <div class="psychologist-selection__desc">
+                        <h2>
+                            Подберите психолога, <br />который поможет решить
+                            <br />ваш запрос быстро
+                        </h2>
+                        <blockquote>
+                            Наши психологи работают по авторской методике
+                            <br />
+                            Quick Result, которая позволяет проработать ваш
+                            запрос <br />за 1–2 сеанса с психологом
+                        </blockquote>
+                    </div>
+                    <div class="psychologist-selection__slider">
+                        <div class="section-intro-slider">
+                            <div class="section-intro-slider__inner">
+                                <strong>50+</strong>
+                                <span>Психологов– <br />практиков</span>
+                            </div>
+
+                            <div
+                                class="section-intro-slider section-intro-swiper swiper"
+                            >
+                                <div class="swiper-wrapper">
+                                    <div
+                                        class="swiper-slide psychologist-card swiper-slide-active"
+                                    >
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide psychologist-card">
+                                        <div
+                                            class="psychologist-card__photo"
+                                            style="
+                                                background-image: URL('/build/images/psychologist/IMG_8889.jpg');
+                                            "
+                                        ></div>
+                                        <div class="psychologist-card__info">
+                                            <div
+                                                class="psychologist-card__name"
+                                            >
+                                                Ирина Шмитс
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-btn swiper-btn-prev">
+                                    <svg>
+                                        <use
+                                            xlink:href="/build/files/sprite.svg#icon--arrow-slider-next"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="swiper-btn swiper-btn-next">
+                                    <svg>
+                                        <use
+                                            xlink:href="/build/files/sprite.svg#icon--arrow-slider-prev"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="psychologist-selection__btn">
+                    <a href="#" class="button button-main button-main__accent"
+                        >ПОДОБРАТЬ ПСИХОЛОГА</a
+                    >
+                </div>
+            </section>
+
+            <section class="section section-blog hidden">
+                <div class="container">
+                    <div class="section__title section__title--center">
+                        <h2>
+                            <ins>Полезные статьи</ins> о психологии от команды
+                            Olly Team
+                        </h2>
+                    </div>
+                    <div class="blog-archive__loop">
+                        <div class="blog-archive-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <article class="article blog-article">
+                                        <div class="blog-article__img">
+                                            <img
+                                                src="/build/images/blog/post-2.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="blog-article__content">
+                                            <div class="blog-tag">
+                                                <div class="blog-tag__item">
+                                                    Депрессия
+                                                </div>
+                                                <div class="blog-tag__item">
+                                                    Выгорание
+                                                </div>
+                                            </div>
+                                            <div class="blog-article__title">
+                                                «Ничего не хочу»: 7 способов
+                                                вернуть жизненные силы и
+                                                настроение
+                                            </div>
+                                            <div
+                                                class="blog-article__blockquote"
+                                            >
+                                                Как выйти из этого состояния и
+                                                проживать свою истинную жизнь,
+                                                наполненную смыслами, ощущениями
+                                                и радостями
+                                            </div>
+                                            <div class="blog-article__p">
+                                                Каждый из нас без исключения
+                                                периодически сталкивается с
+                                                апатией, ощущением полного
+                                                бессилия, нежеланием вставать и
+                                                жить свой день как обычно. Что с
+                                                этим делать, рассказывает
+                                                эксперт-психолог
+                                            </div>
+
+                                            <a
+                                                class="blog-article__more"
+                                                href="/blog-item.html"
+                                            >
+                                                <span>Читать полностью</span>
+                                                <img
+                                                    src="/build/files/icons/svg/icon-arrow-right.svg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="article blog-article">
+                                        <div class="blog-article__img">
+                                            <img
+                                                src="/build/images/blog/post-2.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="blog-article__content">
+                                            <div class="blog-tag">
+                                                <div class="blog-tag__item">
+                                                    Депрессия
+                                                </div>
+                                                <div class="blog-tag__item">
+                                                    Выгорание
+                                                </div>
+                                            </div>
+                                            <div class="blog-article__title">
+                                                «Ничего не хочу»: 7 способов
+                                                вернуть жизненные силы и
+                                                настроение
+                                            </div>
+                                            <div
+                                                class="blog-article__blockquote"
+                                            >
+                                                Как выйти из этого состояния и
+                                                проживать свою истинную жизнь,
+                                                наполненную смыслами, ощущениями
+                                                и радостями
+                                            </div>
+                                            <div class="blog-article__p">
+                                                Каждый из нас без исключения
+                                                периодически сталкивается с
+                                                апатией, ощущением полного
+                                                бессилия, нежеланием вставать и
+                                                жить свой день как обычно. Что с
+                                                этим делать, рассказывает
+                                                эксперт-психолог
+                                            </div>
+
+                                            <a
+                                                class="blog-article__more"
+                                                href="/blog-item.html"
+                                            >
+                                                <span>Читать полностью</span>
+                                                <img
+                                                    src="/build/files/icons/svg/icon-arrow-right.svg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="article blog-article">
+                                        <div class="blog-article__img">
+                                            <img
+                                                src="/build/images/blog/post-2.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="blog-article__content">
+                                            <div class="blog-tag">
+                                                <div class="blog-tag__item">
+                                                    Депрессия
+                                                </div>
+                                                <div class="blog-tag__item">
+                                                    Выгорание
+                                                </div>
+                                            </div>
+                                            <div class="blog-article__title">
+                                                «Ничего не хочу»: 7 способов
+                                                вернуть жизненные силы и
+                                                настроение
+                                            </div>
+                                            <div
+                                                class="blog-article__blockquote"
+                                            >
+                                                Как выйти из этого состояния и
+                                                проживать свою истинную жизнь,
+                                                наполненную смыслами, ощущениями
+                                                и радостями
+                                            </div>
+                                            <div class="blog-article__p">
+                                                Каждый из нас без исключения
+                                                периодически сталкивается с
+                                                апатией, ощущением полного
+                                                бессилия, нежеланием вставать и
+                                                жить свой день как обычно. Что с
+                                                этим делать, рассказывает
+                                                эксперт-психолог
+                                            </div>
+
+                                            <a
+                                                class="blog-article__more"
+                                                href="/blog-item.html"
+                                            >
+                                                <span>Читать полностью</span>
+                                                <img
+                                                    src="/build/files/icons/svg/icon-arrow-right.svg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-blog__btn">
+                        <a href="/blog.html" class="button button-main"
+                            >ЧИТАТЬ ВСЕ СТАТЬИ</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <footer class="footer">
             <div class="container">

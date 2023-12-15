@@ -1,0 +1,95 @@
+.psychotype {
+    margin-top: 30px;
+
+    &__title {
+        margin-top: 50px;
+        color: #666;
+        font-family: $f;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 60px;
+        text-align: center;
+
+        @include md-block() {
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        @include sm-block() {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        ins {
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
+            font-family: $f-bold;
+            text-decoration: none;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding-bottom: 5px;
+    }
+
+    &-sheme {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    &-btn {
+        margin-bottom: 50px;
+
+        &__wrap {
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+
+            @include lg-block() {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    }
+
+    .button-type {
+        @include lg-block() {
+            width: 100%;
+            max-width: 526px;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        @include lg-block() {
+            width: 100%;
+            max-width: 526px;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        @include sm-block() {
+            font-size: 12px;
+        }
+    }
+
+    .button-main {
+        @include md-block() {
+            box-sizing: border-box;
+            max-width: 256px;
+            padding: 11px 35px;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            white-space: normal;
+        }
+    }
+}
+
+// .psychotype
