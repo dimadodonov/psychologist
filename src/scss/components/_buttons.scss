@@ -27,6 +27,12 @@
 
         @include xl-block() {
             padding: 15px 18px;
+            font-size: 13px;
+            line-height: 26px;
+        }
+
+        @include sm-block() {
+            font-size: 12px;
         }
 
         &:hover {
@@ -50,6 +56,14 @@
             }
 
             /* 228.571% */
+        }
+
+        // @include xl-block() {
+        //     font-size: 30px;
+        // }
+
+        ins {
+            text-decoration: none;
         }
     }
 

@@ -1,4 +1,36 @@
+import $ from 'jquery';
+
 export default () => {
+    (function ($) {
+        // Проверяем ширину экрана при загрузке страницы
+        checkScreenWidth();
+
+        // Проверяем ширину экрана при изменении размера окна
+        $(window).on('resize', function () {
+            checkScreenWidth();
+        });
+
+        function checkScreenWidth() {
+            // Получаем текущую ширину экрана
+            var screenWidth = $(window).width();
+
+            // Проверяем условие: если ширина экрана 720px и меньше
+            if (screenWidth <= 1024) {
+                // Перемещаем .section-intro__numbers перед .section-intro__btn
+                $('.section-intro__numbers').insertAfter('.section-intro__btn');
+                $('.section-intro blockquote').insertAfter(
+                    '.section-intro__btn'
+                );
+            }
+            if (screenWidth <= 720) {
+                // Перемещаем .section-intro__numbers перед .section-intro__btn
+                $('.section-intro__numbers').insertAfter(
+                    '.section-intro .container'
+                );
+            }
+        }
+    })($.noConflict());
+
     document.querySelector('.header-menu').addEventListener('click', (e) => {
         const hamburger = document.querySelector('.header-menu .hamburger');
         hamburger.classList.toggle('animate');

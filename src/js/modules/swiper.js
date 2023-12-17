@@ -18,8 +18,12 @@ export default () => {
             // when window width is >= 480px
             480: {},
             // when window width is >= 640px
-            640: {},
-            1024: {},
+            640: { spaceBetween: 10 },
+            960: { spaceBetween: 40 },
+            1024: { spaceBetween: 16 },
+            1200: {
+                spaceBetween: 15,
+            },
         },
     });
     const swiperReviews = new Swiper('.swiper-reviews', {
@@ -63,6 +67,21 @@ export default () => {
             },
         },
     });
+
+    const swiperPsychologistCard = new Swiper(
+        '.swiper-psychologist-grid-card',
+        {
+            slidesPerView: 4,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 40,
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
+        }
+    );
     const swiperArchive = new Swiper('.blog-archive-swiper', {
         spaceBetween: 20,
         speed: 500,

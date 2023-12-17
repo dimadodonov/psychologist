@@ -5,22 +5,62 @@
     &__wrap {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 
     &-item {
-        width: calc(1 / 4 * 100% - 40px);
-        margin: 0 20px;
+        width: calc(1 / 4 * 100% - 20px);
+        margin: 0 10px;
+
+        @include lg-block() {
+            width: calc(50% - 20px);
+        }
+
+        @include md-block() {
+            width: 100%;
+        }
+
+        &:nth-child(1) {
+            .step-item__desc {
+                @include lg-block() {
+                    min-height: 102px;
+                }
+            }
+        }
 
         &:nth-child(2) {
             .step-item__number::before {
                 transform: translate(-10px, -40px) rotate(180deg);
+
+                @include lg-block() {
+                    display: none;
+                }
+            }
+
+            .step-item__desc {
+                @include lg-block() {
+                    min-height: 102px;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .step-item__desc {
+                @include lg-block() {
+                    min-height: 120px;
+                }
             }
         }
 
         &:nth-child(4) {
             .step-item__number::before {
                 display: none;
+            }
+
+            .step-item__desc {
+                @include lg-block() {
+                    min-height: 120px;
+                }
             }
         }
 
@@ -34,6 +74,10 @@
             font-weight: normal;
             text-transform: uppercase;
 
+            @include xl-block() {
+                font-size: 75px;
+            }
+
             &::before {
                 content: '';
                 position: absolute;
@@ -41,10 +85,19 @@
                 left: 100%;
                 width: 156px;
                 height: 20px;
-                margin-left: -10px;
+                margin-left: 60px;
                 background: url('/build/files/icons/svg/step-line.svg')
                     no-repeat;
                 background-size: contain;
+
+                @include lg-block() {
+                    transform: translate(0, -40px) rotate(180deg);
+                }
+
+                @include sm-block() {
+                    width: 100px;
+                    margin-left: 0;
+                }
             }
         }
 
@@ -68,6 +121,24 @@
             line-height: 20px;
             min-height: 175px;
             backdrop-filter: blur(5.5px);
+
+            @include xl-block() {
+                margin-top: -45px;
+                padding: 20px 15px;
+                font-size: 14px;
+                min-height: 160px;
+            }
+
+            @include lg-block() {
+                padding: 21px 32px 21px 20px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @include md-block() {
+                font-size: 13px;
+                min-height: auto !important;
+            }
 
             b {
                 font-family: $f-semibold;

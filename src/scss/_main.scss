@@ -44,7 +44,49 @@
         gap: 35px;
     }
 
+    @include lg-block() {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 570px;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    @include sm-block() {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        padding: 0 30px;
+        overflow-x: auto;
+        gap: 50px;
+        scrollbar-width: none;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &::-moz-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
     &-item {
+        @include lg-block() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        @include sm-block() {
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: max-content !important;
+            min-width: max-content !important;
+        }
+
         &:nth-child(1) {
             .numbers-item__title {
                 background: linear-gradient(
@@ -59,6 +101,14 @@
 
             .numbers-item__desc {
                 max-width: 160px;
+
+                @include lg-block() {
+                    max-width: 240px;
+                }
+
+                @include sm-block() {
+                    max-width: 160px;
+                }
             }
         }
 
@@ -76,6 +126,14 @@
 
             .numbers-item__desc {
                 max-width: 150px;
+
+                @include lg-block() {
+                    max-width: 230px;
+                }
+
+                @include sm-block() {
+                    max-width: 150px;
+                }
             }
         }
 
@@ -93,6 +151,14 @@
 
             .numbers-item__desc {
                 max-width: 170px;
+
+                @include lg-block() {
+                    max-width: 220px;
+                }
+
+                @include sm-block() {
+                    max-width: 170px;
+                }
             }
         }
 
@@ -101,6 +167,18 @@
             font-size: 37px;
             font-style: normal;
             font-weight: normal;
+
+            @include xl-block() {
+                font-size: 30px;
+            }
+
+            @include lg-block() {
+                font-size: 44px;
+            }
+
+            @include md-block() {
+                font-size: 34px;
+            }
 
             ins {
                 font-size: 16px;
@@ -119,6 +197,19 @@
             font-style: normal;
             font-weight: normal;
             line-height: normal;
+
+            @include lg-block() {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            @include md-block() {
+                font-size: 13px;
+            }
+
+            @include sm-block() {
+                text-align: left;
+            }
         }
     }
 }
@@ -178,5 +269,13 @@
 @media (prefers-reduced-motion: reduce) {
     .collapsing.collapse-horizontal {
         transition: none;
+    }
+}
+
+.psychologist-grid {
+    .swiper-grid-column > .swiper-wrapper {
+        @include md-block() {
+            flex-direction: inherit !important;
+        }
     }
 }
