@@ -17,6 +17,9 @@ export default () => {
             // Проверяем условие: если ширина экрана 720px и меньше
             if (screenWidth <= 1024) {
                 // Перемещаем .section-intro__numbers перед .section-intro__btn
+                // $('.psychologist-selection__desc h2').insertAfter(
+                //     '.psychologist-selection__wrap'
+                // );
                 $('.section-intro__numbers').insertAfter('.section-intro__btn');
                 $('.section-intro blockquote').insertAfter(
                     '.section-intro__btn'

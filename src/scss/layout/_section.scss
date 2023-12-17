@@ -510,8 +510,22 @@
     &-psychologist {
         margin-top: 150px;
 
+        h2 {
+            @include sm-block() {
+                font-size: 15px;
+            }
+        }
+
         &-selection {
             margin-top: 150px;
+
+            .section-intro-slider__inner {
+                top: 0;
+
+                @include xl-block() {
+                    top: -10px;
+                }
+            }
 
             .swiper {
                 padding-bottom: 30px;

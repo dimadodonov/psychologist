@@ -2,11 +2,12 @@ import Swiper from 'swiper/swiper-bundle.min';
 
 export default () => {
     const sectionIntroSwiper = new Swiper('.section-intro-swiper', {
-        spaceBetween: 15,
+        spaceBetween: 20,
         speed: 500,
         slidesPerView: 2,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        loop: true,
         // Navigation arrows
         navigation: {
             prevEl: '.swiper-btn-prev',
@@ -18,11 +19,11 @@ export default () => {
             // when window width is >= 480px
             480: {},
             // when window width is >= 640px
-            640: { spaceBetween: 10 },
-            960: { spaceBetween: 40 },
-            1024: { spaceBetween: 16 },
+            640: { spaceBetween: 20 },
+            960: { spaceBetween: 20 },
+            1024: { spaceBetween: 20 },
             1200: {
-                spaceBetween: 15,
+                spaceBetween: 20,
             },
         },
     });
@@ -72,14 +73,58 @@ export default () => {
         '.swiper-psychologist-grid-card',
         {
             slidesPerView: 4,
+            slidesPerColumn: 2,
+            spaceBetween: 40,
             grid: {
                 rows: 2,
             },
-            spaceBetween: 40,
             // pagination: {
             //     el: '.swiper-pagination',
             //     clickable: true,
             // },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    spaceBetween: 10,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                576: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    spaceBetween: 10,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 1,
+                    spaceBetween: 10,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                1024: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                    spaceBetween: 20,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+
+                1200: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                    spaceBetween: 40,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+            },
         }
     );
     const swiperArchive = new Swiper('.blog-archive-swiper', {
