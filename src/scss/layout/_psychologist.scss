@@ -13,111 +13,6 @@
             @include xl-block() {
                 width: 480px;
             }
-
-            h2 {
-                color: #303030;
-                font-family: $f-semibold;
-                font-size: 36px;
-                font-style: normal;
-                font-weight: normal;
-                line-height: 48.058px;
-                text-transform: uppercase;
-
-                @include xl-block() {
-                    font-size: 29px;
-                    line-height: 39.008px;
-                }
-
-                @include lg-block() {
-                    margin-bottom: 30px;
-                    font-size: 25px;
-                    line-height: 30px;
-                    text-align: center;
-                }
-
-                @include md-block() {
-                    font-size: 21px;
-                    line-height: 21px;
-                }
-
-                @include sm-block() {
-                    margin-bottom: 25px;
-                    font-size: 18px;
-                    line-height: 21px;
-                }
-            }
-
-            blockquote {
-                position: relative;
-                display: flex;
-                width: 100%;
-                max-width: 570px;
-                margin-top: 40px;
-                padding: 30px 11px 30px 21px;
-                border-radius: 15px;
-                background: linear-gradient(
-                    91deg,
-                    rgba(255, 255, 255, 0.79) 4.47%,
-                    #fff 100%
-                );
-                box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
-
-                color: #303030;
-                font-size: 18px;
-                font-style: normal;
-                line-height: 134.9%;
-
-                @include xl-block() {
-                    padding: 25px 25px 20px;
-                    font-size: 16px;
-                    line-height: 134.9%;
-                }
-
-                @include lg-block() {
-                    margin-top: 0;
-                    margin-bottom: 30px;
-                }
-
-                @include md-block() {
-                    margin-bottom: 25px;
-                    font-size: 13px;
-                    line-height: 134.9%;
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: -63px;
-                    left: 45%;
-                    width: 187px;
-                    height: 73px;
-                    transform: rotate(34.453deg);
-                    background: url('/build/files/icons/svg/section-psychologist-selection.svg')
-                        no-repeat;
-                    background-size: contain;
-
-                    @include xl-block() {
-                        bottom: -15px;
-                        left: 67%;
-                        width: 98px;
-                        height: 38px;
-                        transform: rotate(34deg);
-                        background: url('/build/files/icons/svg/section-psychologist-selection-mob.svg')
-                            no-repeat;
-                        background-size: contain;
-                    }
-
-                    @include lg-block() {
-                        display: none;
-                    }
-                }
-
-                br {
-                    @include xl-block() {
-                        display: none;
-                    }
-                }
-            }
         }
 
         &__slider {
@@ -129,15 +24,122 @@
             }
         }
 
+        &__quote {
+            @include xl-block() {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
         &__btn {
             display: flex;
             justify-content: center;
             padding-bottom: 5px;
         }
 
-        .section-intro-slider {
+        h2 {
+            color: #303030;
+            font-family: $f-semibold;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 48.058px;
+            text-transform: uppercase;
+
+            @include xl-block() {
+                font-size: 29px;
+                line-height: 39.008px;
+            }
+
             @include lg-block() {
-                margin-bottom: 500px;
+                margin-bottom: 30px;
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            @include md-block() {
+                font-size: 21px;
+                line-height: 21px;
+            }
+
+            @include sm-block() {
+                margin-bottom: 25px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+
+        blockquote {
+            position: relative;
+            display: flex;
+            width: 100%;
+            max-width: 570px;
+            margin-top: 40px;
+            padding: 30px 11px 30px 21px;
+            border-radius: 15px;
+            background: linear-gradient(
+                91deg,
+                rgba(255, 255, 255, 0.79) 4.47%,
+                #fff 100%
+            );
+            box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
+
+            color: #303030;
+            font-size: 18px;
+            font-style: normal;
+            line-height: 134.9%;
+
+            @include xl-block() {
+                padding: 25px 25px 20px;
+                font-size: 16px;
+                line-height: 134.9%;
+            }
+
+            @include lg-block() {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+
+            @include md-block() {
+                margin-bottom: 25px;
+                font-size: 13px;
+                line-height: 134.9%;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -63px;
+                left: 45%;
+                width: 187px;
+                height: 73px;
+                transform: rotate(34.453deg);
+                background: url('/build/files/icons/svg/section-psychologist-selection.svg')
+                    no-repeat;
+                background-size: contain;
+
+                @include xl-block() {
+                    bottom: -15px;
+                    left: 67%;
+                    width: 98px;
+                    height: 38px;
+                    transform: rotate(34deg);
+                    background: url('/build/files/icons/svg/section-psychologist-selection-mob.svg')
+                        no-repeat;
+                    background-size: contain;
+                }
+
+                @include lg-block() {
+                    display: none;
+                }
+            }
+
+            br {
+                @include xl-block() {
+                    display: none;
+                }
             }
         }
     }

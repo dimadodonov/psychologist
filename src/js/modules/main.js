@@ -17,12 +17,23 @@ export default () => {
             // Проверяем условие: если ширина экрана 720px и меньше
             if (screenWidth <= 1024) {
                 // Перемещаем .section-intro__numbers перед .section-intro__btn
-                // $('.psychologist-selection__desc h2').insertAfter(
-                //     '.psychologist-selection__wrap'
-                // );
+                $('.psychologist-selection__quote').insertBefore(
+                    '.psychologist-selection__btn'
+                );
                 $('.section-intro__numbers').insertAfter('.section-intro__btn');
                 $('.section-intro blockquote').insertAfter(
                     '.section-intro__btn'
+                );
+            } else {
+                $('.psychologist-selection__quote').insertAfter(
+                    '.psychologist-selection h2'
+                );
+
+                $('.section-intro__numbers').insertAfter(
+                    '.section-intro-info h1'
+                );
+                $('.section-intro blockquote').insertAfter(
+                    '.section-intro-info h1'
                 );
             }
             if (screenWidth <= 720) {
@@ -33,6 +44,26 @@ export default () => {
             }
         }
     })($.noConflict());
+
+    document.querySelectorAll('a[href^="#"').forEach((link) => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            let href = this.getAttribute('href').substring(1);
+
+            const scrollTarget = document.getElementById(href);
+
+            const topOffset = document.querySelector('.header').offsetHeight;
+            // const topOffset = '100px'; // если не нужен отступ сверху
+            const elementPosition = scrollTarget.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - topOffset;
+
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth',
+            });
+        });
+    });
 
     document.querySelector('.header-menu').addEventListener('click', (e) => {
         const hamburger = document.querySelector('.header-menu .hamburger');
