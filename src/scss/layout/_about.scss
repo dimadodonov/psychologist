@@ -36,7 +36,10 @@
             position: relative;
             top: auto;
             left: auto;
-            width: 709px;
+            width: 100%;
+
+            // width: 709px;
+
             height: 385.292px;
             margin: 0 auto;
         }
@@ -77,8 +80,24 @@
 
             @include lg-block() {
                 top: 90px;
-                right: 465px;
+                right: 480px;
+                width: 43.508px;
+                height: 35.415px;
                 transform: rotate(-27.004deg);
+            }
+
+            @include md-block() {
+                top: 60px;
+                right: 350px;
+                width: 32.402px;
+                height: 26.379px;
+            }
+
+            @include sm-block() {
+                top: 70px;
+                right: 280px;
+                width: 32.402px;
+                height: 26.379px;
             }
         }
 
@@ -119,6 +138,8 @@
 
         @include lg-block() {
             bottom: 43px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         &::after {
@@ -172,6 +193,21 @@
                 width: 430px;
                 height: 70px;
             }
+
+            @include lg-block() {
+                width: 505px;
+                height: 76.088px;
+            }
+
+            @include md-block() {
+                width: 450px;
+                height: 76.088px;
+            }
+
+            @include sm-block() {
+                width: 326px;
+                height: 76.088px;
+            }
         }
 
         &__name {
@@ -190,6 +226,13 @@
             @include xl-block() {
                 font-size: 19px;
                 white-space: nowrap;
+            }
+
+            @include md-block() {
+                font-size: 17px;
+                line-height: 131.8%;
+                text-align: center;
+                white-space: normal;
             }
         }
 
@@ -236,8 +279,18 @@
                 line-height: 22px;
             }
 
-            @include xl-block() {
+            @include lg-block() {
                 padding: 0 35px 0 61px;
+            }
+
+            @include md-block() {
+                padding: 0 35px 0 61px;
+                font-size: 13px;
+            }
+
+            @include sm-block() {
+                padding: 0 0 0 25px;
+                font-size: 13px;
             }
 
             &::before {
@@ -257,6 +310,13 @@
                     left: 0;
                     width: 47.925px;
                     height: 41.194px;
+                }
+
+                @include sm-block() {
+                    top: -25px;
+                    left: 0;
+                    width: 29.465px;
+                    height: 25.327px;
                 }
             }
 
@@ -278,6 +338,12 @@
                     bottom: -15px;
                     width: 47.925px;
                     height: 41.194px;
+                }
+
+                @include sm-block() {
+                    bottom: -35px;
+                    width: 29.465px;
+                    height: 25.327px;
                 }
             }
 
