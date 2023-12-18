@@ -71,4 +71,31 @@ export default () => {
             button.classList.add('button-type__accent');
         });
     });
+
+    // Находим все элементы с классом reviews-item__btn
+    var reviewsItemBtns = document.querySelectorAll('.reviews-item__btn');
+
+    // Перебираем найденные элементы и добавляем обработчик события клика
+    reviewsItemBtns.forEach(function (reviewsItemBtn) {
+        reviewsItemBtn.addEventListener('click', function () {
+            // Находим родительский элемент (div с классом reviews-item) кнопки
+            var parent = this.closest('.reviews-item');
+
+            // Находим элемент с классом reviews-item__desc внутри родительского блока
+            var desc = parent.querySelector('.reviews-item__desc');
+
+            // Проверяем текущий текст кнопки
+            if (this.textContent.trim() === 'Подробнее') {
+                // Если текст 'Подробнее', устанавливаем высоту в 'auto' и меняем текст на 'Свернуть'
+                desc.style.height = 'auto';
+                parent.classList.add('show');
+                this.textContent = 'Свернуть';
+            } else {
+                // Если текст 'Свернуть', устанавливаем высоту в 0 и меняем текст на 'Подробнее'
+                desc.style.height = '240px';
+                parent.classList.remove('show');
+                this.textContent = 'Подробнее';
+            }
+        });
+    });
 };

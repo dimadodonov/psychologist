@@ -149,7 +149,12 @@
             color: #5ab3c9;
         }
 
-        // &-label {}
+        &-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
 
         &-icon {
             width: 32px;
