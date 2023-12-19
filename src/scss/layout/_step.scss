@@ -85,12 +85,20 @@
                 left: 100%;
                 width: 156px;
                 height: 20px;
-                margin-left: 60px;
+                margin-left: -10px;
                 background: url('/build/files/icons/svg/step-line.svg')
                     no-repeat;
                 background-size: contain;
 
+                @include xl-block() {
+                    top: 50px;
+                    width: 120px;
+                }
+
                 @include lg-block() {
+                    top: 60px;
+                    width: 156px;
+                    margin-left: 60px;
                     transform: translate(0, -40px) rotate(180deg);
                 }
 

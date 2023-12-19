@@ -99,6 +99,33 @@
             }
         }
     }
+
+    &-group {
+        display: flex;
+        margin-top: 30px;
+        gap: 40px;
+
+        @include xl-block() {
+            gap: 20px;
+        }
+
+        @include lg-block() {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        &__item {
+            width: calc(50% - 20px);
+
+            @include lg-block() {
+                width: calc(50% - 10px);
+            }
+
+            @include lg-block() {
+                width: 100%;
+            }
+        }
+    }
 }
 
 // .faq

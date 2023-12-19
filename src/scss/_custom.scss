@@ -1,5 +1,5 @@
 body {
-    // height: 9000px;
+    height: 9000px;
 }
 
 .form {
@@ -121,8 +121,11 @@ body {
             background-position: 25px 15px;
             background-size: 22px 22px;
 
-            @include md-block() {
+            @include lg-block() {
                 width: 100%;
+            }
+
+            @include md-block() {
                 height: 45px;
                 background-position: 25px 10px;
             }
@@ -304,230 +307,301 @@ body {
 }
 
 .modal {
-    /* делаем прозрачным */
-
     position: fixed;
-
-    /* фон для затемнения */
-
     z-index: 9999;
-
-    /* начальные стили */
-
     visibility: hidden;
-
-    /* скрываем модальное окно */
-
     opacity: 0;
     display: block;
-
-    /* перекрываем все элементы */
-
     transition:
         visibility 0s 0.25s,
         opacity 0.25s;
     background: rgba(18, 18, 18, 0.8);
-
-    /* делаем блок фиксированным */
-
     inset: 0;
 
-    /* добавляем для плавного перехода */
-}
-
-.modal_active {
-    /* убираем прозрачность */
-
-    visibility: visible;
-
-    /* активный класс модального окна */
-
-    opacity: 1;
-
-    /* отображаем блок модального окна */
-
-    transition:
-        visibility 0s 0s,
-        opacity 0.25s;
-
-    /* добавляем для плавного перехода */
-}
-
-.modal__wrapper {
-    /* блок обертка для центрирования контентной части модального окна */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-.modal__body {
-    /* добавляем полосу прокрутки при недостаточной высоте */
-
-    position: relative;
-    max-width: 640px;
-
-    /* боковые отступы для мобильных экранов */
-
-    max-height: 100%;
-    margin: 0 24px;
-    padding: 35px 40px;
-
-    /* еще один блок обертка для возможности прокрутки контента, если модальное окно не помещается по высоты */
-
-    overflow-y: auto;
-    border-radius: 30px;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 1, 0.1);
-
-    /* скрываем полосу прокрутки */
-
-    -ms-overflow-style: none;
-
-    /* скрываем полосу прокрутки */
-
-    scrollbar-width: none;
-}
-
-.modal__body::-webkit-scrollbar {
-    /* скрываем полосу прокрутки */
-
-    display: none;
-}
-
-.modal__inner {
-    position: relative;
-
-    /* стилизуем контентную часть */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 35px 40px;
-    border: 1px solid #e2e2e2;
-    border-radius: 15px;
-    color: #000;
-    text-align: center;
-
-    /* отступы сверху и снизу, чтобы контентная часть модального окна не прилипала к границам браузера при недостаточной высоте */
-}
-
-.modal__close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.modal__title {
-    background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
-    font-family: $f-semibold;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.modal__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 15px 0 30px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-.modal__nav {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 15px 0 30px;
-
-    &--prev {
-        color: #666;
-        font-size: 14px;
-    }
-}
-
-.modal-content {
-    text-align: left;
-
-    &__title {
-        color: #000;
-        font-family: $f-semibold;
-        font-size: 20px;
-        font-weight: normal;
-    }
-
-    span {
-        color: #000;
-        font-family: $f-light;
-        font-size: 16px;
-        font-style: normal;
-    }
-}
-
-.modal-quiz-next {
-    display: inline-flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    width: 165px;
-    height: 44px;
-    padding: 12.599px 35.435px;
-    border-radius: 40px;
-    background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%),
-        linear-gradient(180deg, #f4f4f4 0%, #d1cccc 100%),
-        linear-gradient(180deg, #fff 0%, #eaeaea 100%);
-    box-shadow: 0 2.17px 0 0 #088492;
-    color: #fff;
-    font-family: $f-bold;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 32px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.modal__step-bar {
-    width: 100%;
-    height: 5px;
-    border-radius: 32px;
-    background: #eaeaea;
-
-    &.order {
-        max-width: 103px;
-    }
-
-    &.quiz {
-        max-width: 245px;
-    }
-}
-
-.progress {
-    position: relative;
-    display: block;
-    width: 10%;
-    height: 100%;
-    border-radius: 32px;
-    background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 100%;
-        width: 5px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         height: 100%;
-        background-color: #fff;
+    }
+
+    &__body {
+        position: relative;
+        max-width: 640px;
+        max-height: 100%;
+        margin: 0 24px;
+        padding: 35px 40px;
+        overflow-y: auto;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 1, 0.1);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & .modal__inner {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 35px 40px;
+            border: 1px solid #e2e2e2;
+            border-radius: 15px;
+            color: #000;
+            text-align: center;
+        }
+
+        & .modal__close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        & .modal__title {
+            margin-bottom: 10px;
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
+            font-family: $f-semibold;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        & .modal__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            margin: 15px 0 30px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+
+    &__inner {
+        &.thanks {
+            width: 560px;
+
+            height: 560px;
+
+            padding: 100px 0 190px;
+
+            background: url('/build/images/modal-thanks.jpg') no-repeat;
+            background-position: bottom right;
+            background-size: cover;
+
+            .modal__nav {
+                display: none;
+            }
+
+            .modal-content__title {
+                width: 345px;
+                color: #000;
+                font-family: $f-medium;
+                font-size: 16px;
+                font-style: normal;
+                line-height: normal;
+            }
+
+            .modal-content span {
+                display: block;
+                margin-top: 30px;
+                color: #666668;
+                font-size: 14px;
+                font-style: normal;
+                line-height: 16.518px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 15px 0 30px;
+
+        &--prev {
+            color: #666;
+            font-size: 14px;
+            vertical-align: middle;
+            cursor: pointer;
+
+            ins {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                margin-right: 5px;
+                margin-bottom: -1px;
+                background: url('/build/files/icons/svg/icon-arrow-modal-back.svg')
+                    no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    &__step {
+        &-bar {
+            width: 100%;
+            height: 5px;
+            border-radius: 32px;
+            background: #eaeaea;
+
+            &.order {
+                max-width: 103px;
+            }
+
+            &.quiz {
+                max-width: 245px;
+            }
+
+            .progress {
+                position: relative;
+                display: block;
+                width: 10%;
+                height: 100%;
+                border-radius: 32px;
+                background: linear-gradient(
+                    174deg,
+                    #53c4d0 3.78%,
+                    #008a99 94.73%
+                );
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 100%;
+                    width: 5px;
+                    height: 100%;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    &_active {
+        visibility: visible;
+        opacity: 1;
+        transition:
+            visibility 0s 0s,
+            opacity 0.25s;
+    }
+
+    &-content {
+        text-align: left;
+
+        &__title {
+            margin-bottom: 10px;
+            color: #000;
+            font-family: $f-semibold;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 30px;
+            color: #000;
+            font-family: $f-light;
+            font-size: 16px;
+            font-style: normal;
+        }
+
+        small {
+            display: block;
+            color: #949494;
+            font-family: $f-light;
+            font-size: 16px;
+            font-style: normal;
+        }
+    }
+
+    &-quiz {
+        &__item {
+            &.thanks {
+                .modal-content {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        &__item {
+            width: 20px;
+            height: 20px;
+
+            &.vk {
+                background: url('/build/files/icons/svg/icon-modal-vk.svg')
+                    no-repeat;
+                background-size: contain;
+            }
+
+            &.inst {
+                background: url('/build/files/icons/svg/icon-modal-inst.svg')
+                    no-repeat;
+                background-size: contain;
+            }
+
+            & + & {
+                margin-left: 16px;
+            }
+        }
+    }
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        a {
+            color: #000;
+            text-decoration: underline !important;
+        }
+    }
+
+    &-btn {
+        display: inline-flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 165px;
+        height: 44px;
+        padding: 12.599px 35.435px;
+        border-radius: 40px;
+        background: linear-gradient(180deg, #f4f4f4 0%, #d1cccc 100%),
+            linear-gradient(180deg, #fff 0%, #eaeaea 100%);
+        box-shadow: 0 2.17px 0 0 #ddd;
+        font-family: $f-bold;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &__accent {
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%),
+                linear-gradient(180deg, #f4f4f4 0%, #d1cccc 100%),
+                linear-gradient(180deg, #fff 0%, #eaeaea 100%);
+            box-shadow: 0 2.17px 0 0 #088492;
+            color: #fff;
+        }
     }
 }

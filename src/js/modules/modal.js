@@ -39,6 +39,7 @@ export default () => {
     const progressBar = document.querySelector('.progress');
     const titleElement = document.querySelector('.modal__title');
     const backButton = document.querySelector('.modal__nav--prev');
+    const modalInner = document.querySelector('.modal__inner');
 
     let currentStep = 1;
 
@@ -62,8 +63,10 @@ export default () => {
         // Проверяем, является ли текущий шаг последним, и скрываем кнопку "Назад" при необходимости
         if (step === quizItems.length) {
             backButton.style.display = 'none';
+            modalInner.classList.add('thanks');
         } else {
             backButton.style.display = 'block';
+            modalInner.classList.remove('thanks');
         }
     }
 
@@ -81,15 +84,17 @@ export default () => {
         }
     }
 
-    // Назначаем обработчики событий для кнопок "Далее" и "Назад"
-    document.querySelectorAll('.modal-quiz-next').forEach((button) => {
-        button.addEventListener('click', nextStep);
-    });
+    if (backButton) {
+        // Назначаем обработчики событий для кнопок "Далее" и "Назад"
+        document.querySelectorAll('.modal-quiz-next').forEach((button) => {
+            button.addEventListener('click', nextStep);
+        });
 
-    document
-        .querySelector('.modal__nav--prev')
-        .addEventListener('click', prevStep);
+        document
+            .querySelector('.modal__nav--prev')
+            .addEventListener('click', prevStep);
 
-    // Показываем первый шаг при загрузке страницы
-    showStep(currentStep);
+        // Показываем первый шаг при загрузке страницы
+        showStep(currentStep);
+    }
 };

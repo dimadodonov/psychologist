@@ -81,6 +81,17 @@
         }
     }
 
+    &-corp {
+        &-formats {
+            margin: 150px 0;
+
+            h2 {
+                max-width: 759px;
+                margin: 0 auto;
+            }
+        }
+    }
+
     &-intro {
         margin-top: 100px;
         padding-bottom: 10px;
@@ -648,6 +659,14 @@
             justify-content: center;
             margin-top: 40px;
             padding-bottom: 5px;
+        }
+
+        &-group {
+            margin-top: 150px;
+
+            @include sm-block() {
+                margin-top: 100px;
+            }
         }
 
         .faq {
