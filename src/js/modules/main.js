@@ -118,10 +118,18 @@ export default () => {
         });
     });
 
-    document.querySelector('.header-menu').addEventListener('click', (e) => {
-        const hamburger = document.querySelector('.header-menu .hamburger');
-        hamburger.classList.toggle('animate');
-    });
+    const headerMenu = document.querySelector('.header-menu');
+    if (headerMenu) {
+        document
+            .querySelector('.header-menu')
+            .addEventListener('click', (e) => {
+                const hamburger = document.querySelector(
+                    '.header-menu .hamburger'
+                );
+                hamburger.classList.toggle('animate');
+                document.querySelector('.header nav').classList.toggle('show');
+            });
+    }
 
     // Находим все кнопки
     const buttons = document.querySelectorAll('.button-type');

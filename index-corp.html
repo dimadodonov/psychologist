@@ -7,53 +7,132 @@
         <title>HTML</title>
         <link rel="stylesheet" href="/build/css/app.min.css" />
     </head>
-    <body class="bg-home">
-        <header class="header">
-            <div class="header__wrap container">
-                <div class="header-menu">
-                    <div class="header-menu__hamburger">
-                        <div class="hamburger"></div>
-                    </div>
-                    <span>Меню</span>
-                </div>
-                <a class="header-logo" href="/">
-                    <span class="header-logo__text"
-                        >Команда психологов<br />
-                        Ольги Роменской</span
-                    >
-                </a>
-                <nav class="nav-home">
-                    <ul>
-                        <li>
-                            <a href="#psychologist">Психологи</a>
-                        </li>
-                        <li><a href="#faq">Вопрос/Ответ</a></li>
-                        <li><a href="#reviews">Отзывы</a></li>
-                        <li>
-                            <a href="/index-corp.html"
-                                >Корпоративным клиентам</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__callback">
-                    <img
-                        src="/build/files/icons/svg/icon-phone-bg.svg"
-                        alt=""
-                    />
-                    <span>Перезвоните мне</span>
-                </div>
-            </div>
-        </header>
+    <body class="bg-corp">
         <div class="page-wrap corp">
             <section class="section section-corp-intro">
                 <div class="container">
-                    <div class="corp-intro"></div>
+                    <div class="corp-intro">
+                        <div class="corp-intro__badge">Olly Team Business</div>
+                        <h1>Психологическая помощь для роста бизнеса</h1>
+
+                        <blockquote>
+                            <b>прибыль компании</b> =
+                            <ins class="colors-blue">здоровые сотрудники</ins>
+                        </blockquote>
+
+                        <div class="section-intro__numbers numbers">
+                            <div class="numbers-item">
+                                <div class="numbers-item__title one">50 +</div>
+                                <div class="numbers-item__desc">
+                                    квалифицированных терапевтов
+                                </div>
+                            </div>
+                            <div class="numbers-item">
+                                <div class="numbers-item__title two">5 +</div>
+                                <div class="numbers-item__desc">
+                                    лет работы с корпоративными клиентами
+                                </div>
+                            </div>
+                            <div class="numbers-item">
+                                <div class="numbers-item__title tree">
+                                    10 000 +
+                                </div>
+                                <div class="numbers-item__desc">
+                                    проведенных терапий
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="corp-intro__btn">
+                            <a
+                                href="#"
+                                class="button button-main button-main__accent"
+                                >Оставить заявку</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section section-corp-business">
                 <div class="container">
-                    <div class="corp-business"></div>
+                    <div class="corp-business">
+                        <picture>
+                            <source
+                                media="(max-width: 375px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-xs.png
+                                "
+                                type="image/png"
+                            />
+                            <source
+                                media="(max-width: 375px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-xs.webp
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 576px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-sm.png
+                                "
+                                type="image/png"
+                            />
+                            <source
+                                media="(max-width: 576px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-sm.webp
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 768px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-md.png
+                                "
+                                type="image/png"
+                            />
+                            <source
+                                media="(max-width: 768px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-md.webp
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 1024px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-lg.png
+                                "
+                                type="image/png"
+                            />
+                            <source
+                                media="(max-width: 1024px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-lg.webp
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 1200px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-xl.png
+                                "
+                                type="image/png"
+                            />
+                            <source
+                                media="(max-width: 1200px)"
+                                srcset="
+                                    /build/images/section/corp/business/business-xl.webp
+                                "
+                                type="image/webp"
+                            />
+                            <img
+                                src="/build/images/section/corp/business/business-xl.png"
+                                alt=""
+                            />
+                        </picture>
+                    </div>
                 </div>
             </section>
             <section class="section section-corp-check">
@@ -64,7 +143,47 @@
                             <ins>команда психологов Olly Team</ins>
                         </h2>
                     </div>
-                    <div class="corp-check"></div>
+                    <div class="corp-check">
+                        <div class="corp-check__row">
+                            <div class="corp-check__item">
+                                <div class="corp-check__icon"></div>
+                                <div class="corp-check__title">
+                                    Повышение нацеленности на результат
+                                </div>
+                            </div>
+                            <div class="corp-check__item">
+                                <div class="corp-check__icon"></div>
+                                <div class="corp-check__title">
+                                    Сложности в коммуникации между сотрудниками
+                                </div>
+                            </div>
+                            <div class="corp-check__item">
+                                <div class="corp-check__icon"></div>
+                                <div class="corp-check__title">
+                                    Снижение стрессовых ситуаций в компании
+                                </div>
+                            </div>
+                            <div class="corp-check__item">
+                                <div class="corp-check__icon"></div>
+                                <div class="corp-check__title">
+                                    Выгорание сотрудников
+                                </div>
+                            </div>
+                            <div class="corp-check__item">
+                                <div class="corp-check__icon"></div>
+                                <div class="corp-check__title">
+                                    Снижение тревожности сотрудников
+                                </div>
+                            </div>
+                            <div class="corp-check__item">
+                                <div class="corp-check__icon"></div>
+                                <div class="corp-check__title">
+                                    Повышение уровня круговой ответственности в
+                                    компании
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section section-corp-up">
@@ -74,7 +193,80 @@
                             Увеличили свою эффективность с <ins>Olly Team</ins>
                         </h2>
                     </div>
-                    <div class="corp-up"></div>
+                    <div class="corp-up">
+                        <div class="corp-up__slider">
+                            <div class="corp-up-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-2.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-4.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-5.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-6.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-7.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="/build/images/section/corp/up/slider-8.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corp-up__text">
+                            <ins class="colors-blue">более 70%</ins
+                            ><span
+                                >сотрудников отмечают
+                                <b
+                                    >повышение эффективности и снижения
+                                    стресса</b
+                                >
+                                уже <b>после третьей терапии</b></span
+                            >
+                        </div>
+                        <div class="corp-up__btn">
+                            <a
+                                href="#"
+                                class="button button-main button-main__accent"
+                                >Повысить эффективность сотрудников</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section section-corp-result">
@@ -84,7 +276,62 @@
                             <ins>Результаты,</ins> которые получили наши клиенты
                         </h2>
                     </div>
-                    <div class="corp-result"></div>
+                    <div class="corp-result">
+                        <div class="corp-result__item">
+                            <div class="corp-result__title colors-blue">
+                                Доход
+                            </div>
+                            <div class="corp-result__ul">
+                                <div class="corp-result__li">
+                                    Увеличение продаж
+                                </div>
+                                <div class="corp-result__li">
+                                    Достижение целей бизнеса
+                                </div>
+                                <div class="corp-result__li">
+                                    Набор сильной команды ТОПов
+                                </div>
+                                <div class="corp-result__li">
+                                    Решение внутренних конфликтов, влияющих на
+                                    результат бизнеса
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corp-result__item">
+                            <div class="corp-result__title colors-green">
+                                партнеры
+                            </div>
+                            <div class="corp-result__ul">
+                                <div class="corp-result__li">
+                                    Выстраивание гармоничного партнерства в
+                                    бизнесе
+                                </div>
+                                <div class="corp-result__li">
+                                    Экологичный выход из партнерства
+                                </div>
+                                <div class="corp-result__li">
+                                    Пересмотр договоренностей с контрагентами
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corp-result__item">
+                            <div class="corp-result__title colors-orange">
+                                масштаб
+                            </div>
+                            <div class="corp-result__ul">
+                                <div class="corp-result__li">
+                                    Выход на международный рынок
+                                </div>
+                                <div class="corp-result__li">
+                                    Открытие представительств и филиалов в
+                                    других городах
+                                </div>
+                                <div class="corp-result__li">
+                                    Привлечение инвестиций в бизнес
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section section-corp-step">
@@ -95,7 +342,71 @@
                             клиентами
                         </h2>
                     </div>
-                    <div class="corp-step"></div>
+                    <div class="corp-step">
+                        <div class="corp-step__wrap">
+                            <div class="corp-step-item">
+                                <div class="corp-step-item__number colors-blue">
+                                    01
+                                </div>
+                                <div class="corp-step-item__desc">
+                                    Диагностика команды на стратегической сессии
+                                </div>
+                            </div>
+                            <div class="corp-step-item">
+                                <div
+                                    class="corp-step-item__number colors-green"
+                                >
+                                    02
+                                </div>
+                                <div class="corp-step-item__desc">
+                                    Личная диагностика каждого члена команды
+                                </div>
+                            </div>
+                            <div class="corp-step-item">
+                                <div
+                                    class="corp-step-item__number colors-orange"
+                                >
+                                    03
+                                </div>
+                                <div class="corp-step-item__desc">
+                                    Подбор релевантных терапевтов
+                                </div>
+                            </div>
+                            <div class="corp-step-item">
+                                <div
+                                    class="corp-step-item__number colors-purple"
+                                >
+                                    04
+                                </div>
+                                <div class="corp-step-item__desc">
+                                    Составление расписания терапий согласно
+                                    рекомендациям старшего куратора
+                                </div>
+                            </div>
+                            <div class="corp-step-item">
+                                <div
+                                    class="corp-step-item__number colors-darkviolet"
+                                >
+                                    05
+                                </div>
+                                <div class="corp-step-item__desc">
+                                    Выстраивание стратегии проработок и
+                                    персональная работа
+                                </div>
+                            </div>
+                            <div class="corp-step-item">
+                                <div
+                                    class="corp-step-item__number colors-navyblue"
+                                >
+                                    06
+                                </div>
+                                <div class="corp-step-item__desc">
+                                    Составление резюме работы и аналитика
+                                    ежемесячно
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -107,7 +418,134 @@
                             <ins>с нами комфортно</ins>
                         </h2>
                     </div>
-                    <div class="corp-edge"></div>
+                    <div class="corp-edge">
+                        <div class="corp-edge-ul">
+                            <div class="corp-edge-ul-item">
+                                <div class="corp-edge-ul-item__icon">
+                                    <img
+                                        src="/build/files/icons/svg/icon-corp-edge-1.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="corp-edge-ul-item__desc">
+                                    Доступ с любого устройства и в любой день
+                                    недели
+                                </div>
+                            </div>
+                            <div class="corp-edge-ul-item">
+                                <div class="corp-edge-ul-item__icon">
+                                    <img
+                                        src="/build/files/icons/svg/icon-corp-edge-2.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="corp-edge-ul-item__desc">
+                                    Индивидуальный подбор специалиста
+                                </div>
+                            </div>
+                            <div class="corp-edge-ul-item">
+                                <div class="corp-edge-ul-item__icon">
+                                    <img
+                                        src="/build/files/icons/svg/icon-corp-edge-3.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="corp-edge-ul-item__desc">
+                                    100% конфиденциальность общения
+                                </div>
+                            </div>
+                            <div class="corp-edge-ul-item">
+                                <div class="corp-edge-ul-item__icon">
+                                    <img
+                                        src="/build/files/icons/svg/icon-corp-edge-4.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="corp-edge-ul-item__desc">
+                                    Оплата только за фактически проведенные
+                                    сессии
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corp-edge-img">
+                            <picture>
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-xs.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-xs.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 576px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-sm.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 576px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-sm.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-md.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-md.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 1024px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-md.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 1024px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-md.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 1200px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-xl.png
+                                    "
+                                    type="image/png"
+                                />
+                                <source
+                                    media="(max-width: 1200px)"
+                                    srcset="
+                                        /build/images/section/corp/edge/images-xl.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="/build/images/section/corp/edge/images-xl.png"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </section>
 

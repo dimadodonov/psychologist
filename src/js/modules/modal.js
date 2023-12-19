@@ -11,6 +11,7 @@ export default () => {
             });
         });
     };
+    openModal('.js-popup-feedback', '.modal[data-modal="feedback"]'); // Запускаем функцию и передаем селекторы для первого модального окна
     openModal('.js-popup-order', '.modal[data-modal="order"]'); // Запускаем функцию и передаем селекторы для первого модального окна
     openModal('.js-popup-quiz', '.modal[data-modal="quiz"]'); // Запускаем функцию и передаем селекторы для первого модального окна
 

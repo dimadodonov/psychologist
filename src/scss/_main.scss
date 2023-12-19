@@ -1,23 +1,48 @@
-// .bg {
-//     &-blog {
-//         &-page {
-//             background: url('../../build/images/bg-blog-page.jpg') no-repeat;
-//             background-color: #fbfbfb;
-//             background-repeat: no-repeat;
-//             background-size: contain;
-//         }
+.bg {
+    &-corp {
+        background: url('/build/images/bg-corp-page.jpg') no-repeat;
+        background-color: #fbfbfb;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 1920px 7266px;
 
-//         &-archive {
-//             background: url('../../build/images/bg-blog-archive.jpg') no-repeat;
-//             background-color: #fbfbfb;
-//             background-repeat: no-repeat;
-//             background-size: 1920px 3057px;
-//         }
-//     }
-// }
+        @include xl-block() {
+            background: url('/build/images/bg-corp-page-xl.jpg') no-repeat;
+            background-color: #fbfbfb;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 1024px 6313px;
+        }
+
+        @include lg-block() {
+            background: url('/build/images/bg-corp-page-xl.jpg') no-repeat;
+            background-color: #fbfbfb;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+    }
+
+    &-blog {
+        &-page {
+            background: url('../../build/images/bg-blog-page.jpg') no-repeat;
+            background-color: #fbfbfb;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &-archive {
+            background: url('../../build/images/bg-blog-archive.jpg') no-repeat;
+            background-color: #fbfbfb;
+            background-repeat: no-repeat;
+            background-size: 1920px 3057px;
+        }
+    }
+}
 
 // /* Затем проверяем поддержку WebP */
 // @supports (background: url('../../build/images/bg-blog-page.webp')) {
+
 //     .bg-blog-page {
 //         background: url('../../build/images/bg-blog-page.webp');
 //         background-color: #fbfbfb;
@@ -27,6 +52,7 @@
 // }
 
 // @supports (background: url('../../build/images/bg-blog-archive.webp')) {
+
 //     .bg-blog-archive {
 //         background: url('../../build/images/bg-blog-archive.webp');
 //         background-color: #fbfbfb;
@@ -238,6 +264,20 @@
 
     &-purple {
         background: linear-gradient(94deg, #ff9085 5.11%, #fb6fbb 95.41%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-darkviolet {
+        background: linear-gradient(146deg, #cc4fb3 27.91%, #ca4d73 90.69%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-navyblue {
+        background: linear-gradient(149deg, #5865d6 12.83%, #131380 66.46%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;

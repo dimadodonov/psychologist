@@ -27,6 +27,7 @@ export default () => {
             },
         },
     });
+
     const swiperReviews = new Swiper('.swiper-reviews', {
         spaceBetween: 20,
         speed: 500,
@@ -127,6 +128,7 @@ export default () => {
             },
         }
     );
+
     const swiperArchive = new Swiper('.blog-archive-swiper', {
         spaceBetween: 20,
         speed: 500,
@@ -153,6 +155,46 @@ export default () => {
             640: {
                 slidesPerView: 2,
                 spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    const corpUpSwiper = new Swiper('.corp-up-swiper', {
+        spaceBetween: 30,
+        speed: 500,
+        slidesPerView: 3,
+        // loop: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
             1024: {
                 slidesPerView: 3,

@@ -82,6 +82,68 @@
     }
 
     &-corp {
+        &-intro {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+        }
+
+        &-business {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+        }
+
+        &-check {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+
+            h2 {
+                ins {
+                    display: block;
+                }
+            }
+        }
+
+        &-up {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+        }
+
+        &-result {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+        }
+
+        &-step {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+        }
+
+        &-edge {
+            margin: 150px 0 0;
+
+            @include lg-block() {
+                margin: 150px 0 0;
+            }
+        }
+
         &-formats {
             margin: 150px 0;
 
