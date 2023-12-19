@@ -13,17 +13,37 @@ export default () => {
         function checkScreenWidth() {
             // Получаем текущую ширину экрана
             var screenWidth = $(window).width();
-
             // Проверяем условие: если ширина экрана 720px и меньше
             if (screenWidth <= 1024) {
                 // Перемещаем .section-intro__numbers перед .section-intro__btn
                 $('.psychologist-selection__quote').insertBefore(
                     '.psychologist-selection__btn'
                 );
+                // $('.section-faq').insertAfter('.section-blog');
                 $('.section-intro__numbers').insertAfter('.section-intro__btn');
                 $('.section-intro blockquote').insertAfter(
                     '.section-intro__btn'
                 );
+
+                if ($('.blog-item').length > 0) {
+                    $('.blog__sidebar').detach().appendTo('.blog-grid');
+                    $('.blog-article.blog-choise-card')
+                        .detach()
+                        .appendTo('.blog-grid');
+                }
+                if ($('.blog-archive').length > 0) {
+                    $('.blog-article.blog-choise-card')
+                        .detach()
+                        .appendTo('.blog-archive__row');
+                }
+                if ($('.page-wrap.psychologist-item').length > 0) {
+                    $('.psychologist-item__conten--about')
+                        .detach()
+                        .appendTo('.psychologist-item__about');
+                    $('.psychologist-item__price')
+                        .detach()
+                        .appendTo('.psychologist-item__about');
+                }
             } else {
                 $('.psychologist-selection__quote').insertAfter(
                     '.psychologist-selection h2'
@@ -35,12 +55,45 @@ export default () => {
                 $('.section-intro blockquote').insertAfter(
                     '.section-intro-info h1'
                 );
+
+                if ($('.blog-item').length > 0) {
+                    $('.blog__sidebar').detach().appendTo('.blog__row');
+                }
+                if ($('.blog-archive').length > 0) {
+                    $('.blog-choise-card').detach().appendTo('.blog-aside');
+                }
+                if ($('.page-wrap.psychologist-item').length > 0) {
+                    $('.psychologist-item__price').insertAfter(
+                        '.psychologist-item__content-teleport'
+                    );
+                    $('.psychologist-item__conten--about').insertAfter(
+                        '.psychologist-item__content-teleport'
+                    );
+                }
             }
-            if (screenWidth <= 720) {
+            if (screenWidth <= 768) {
                 // Перемещаем .section-intro__numbers перед .section-intro__btn
                 $('.section-intro__numbers').insertAfter(
                     '.section-intro .container'
                 );
+
+                if ($('.page-wrap.psychologist-item').length > 0) {
+                    $('.psychologist-item__price').insertAfter(
+                        '.psychologist-item__thumb'
+                    );
+                    $('.psychologist-item__name').insertBefore(
+                        '.psychologist-item__thumb'
+                    );
+                }
+            } else {
+                if ($('.page-wrap.psychologist-item').length > 0) {
+                    // $('.psychologist-item__price').insertAfter(
+                    //     '.psychologist-item__thumb'
+                    // );
+                    $('.psychologist-item__name').insertBefore(
+                        '.psychologist-item__content-tags'
+                    );
+                }
             }
         }
     })($.noConflict());
@@ -129,4 +182,21 @@ export default () => {
             }
         });
     });
+
+    var textBlock = document.querySelector('.psychologist-item__text--about');
+    var moreButton = document.querySelector('.psychologist-item__more span');
+
+    if (moreButton) {
+        moreButton.addEventListener('click', () => {
+            if (textBlock.style.maxHeight) {
+                // Свернуть текст
+                textBlock.style.maxHeight = null;
+                moreButton.textContent = 'Читать полностью';
+            } else {
+                // Развернуть текст
+                textBlock.style.maxHeight = textBlock.scrollHeight + 'px';
+                moreButton.textContent = 'Свернуть';
+            }
+        });
+    }
 };

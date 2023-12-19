@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML</title>
+        <link rel="stylesheet" href="/build/css/app.min.css" />
+    </head>
+    <body class="bg-psychologist">
+        <header class="header">
+            <div class="header__wrap container">
+                <div class="header-menu">
+                    <div class="header-menu__hamburger">
+                        <div class="hamburger"></div>
+                    </div>
+                    <span>Меню</span>
+                </div>
+                <a class="header-logo" href="/">
+                    <span class="header-logo__text"
+                        >Команда психологов<br />
+                        Ольги Роменской</span
+                    >
+                </a>
+                <nav class="nav-home">
+                    <ul>
+                        <li>
+                            <a href="#psychologist">Психологи</a>
+                        </li>
+                        <li><a href="#faq">Вопрос/Ответ</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li>
+                            <a href="/index-corp.html"
+                                >Корпоративным клиентам</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__callback" href="#">
+                    <img
+                        src="/build/files/icons/svg/icon-phone-bg.svg"
+                        alt=""
+                    />
+                    <span>Перезвоните мне</span>
+                </a>
+            </div>
+        </header>
+        <div class="page-wrap psychologist-item">
+            <div class="container">
+                <div class="psychologist-item__wrap">
+                    <div class="psychologist-item__row">
+                        <div class="psychologist-item__thumb">
+                            <div
+                                class="psychologist-item__photo"
+                                style="
+                                    background-image: URL('/build/images/psychologist/02.jpg');
+                                "
+                            ></div>
+                        </div>
+                        <div class="psychologist-item__info">
+                            <div class="psychologist-item__name">
+                                Абрамова Мария
+                            </div>
+                            <div class="psychologist-item__content-tags">
+                                <div class="psychologist-item__label">
+                                    Направления работы:
+                                </div>
+                                <div class="psychologist-item__tags">
+                                    <span>Бизнес</span>
+                                    <span>Семейные отношения</span>
+                                    <span>Отсутствие отношений</span>
+                                    <span>Энергия</span>
+                                    <span>Личный рост</span>
+                                    <span>Деньги</span>
+                                    <span>Психосоматика</span>
+                                    <span>Панические атаки</span>
+                                    <span>Страхи</span>
+                                    <span>Самооценка</span>
+                                    <span>Карьера</span>
+                                </div>
+                            </div>
+                            <div
+                                class="psychologist-item__content psychologist-item__content-teleport"
+                            >
+                                <div class="psychologist-item__label">
+                                    Психолог высшей категории
+                                </div>
+                                <div class="psychologist-item__text">
+                                    4 года практики, более 3000 терапий
+                                </div>
+                            </div>
+                            <div
+                                class="psychologist-item__content psychologist-item__conten--about"
+                            >
+                                <div class="psychologist-item__label">
+                                    Обо мне
+                                </div>
+                                <div
+                                    class="psychologist-item__text psychologist-item__text--about"
+                                >
+                                    <p>
+                                        В команде с момента её создания. Провела
+                                        более 2500 результативных терапий.
+                                        Персональный подход к каждому клиенту,
+                                        подбираю наиболее эффективные техники
+                                        для терапии. Вышла из абьюзивных
+                                        отношений. Успешно совмещаю личную
+                                        жизнь, материнство, отдых и работу.
+                                    </p>
+
+                                    <p>
+                                        С радостью помогу вам решить ваш запрос
+                                        в сфере:
+                                    </p>
+
+                                    <ul>
+                                        <li>- бизнеса</li>
+                                        <li>- семейных отношений</li>
+                                        <li>- отсутствия отношений</li>
+                                        <li>- энергии</li>
+                                        <li>- личного роста</li>
+                                        <li>- денег</li>
+                                        <li>- психосоматики заболеваний</li>
+                                        <li>- панических атак</li>
+                                        <li>- страхов</li>
+                                        <li>- самооценки</li>
+                                        <li>- карьеры</li>
+                                    </ul>
+
+                                    <p>До встречи на консультации!</p>
+                                </div>
+                                <div class="psychologist-item__more">
+                                    <span>Читать полностью</span>
+                                </div>
+                            </div>
+                            <div class="psychologist-item__price">
+                                Цена за консультацию: <b>10 000 рублей</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="psychologist-item__wrap psychologist-item__about"
+                ></div>
+                <div class="psychologist-item__wrap">
+                    <h2>Запись на онлайн-консультацию</h2>
+                    <div class="psychologist-item__consultation">
+                        <div class="schedule__wrap">
+                            <div class="schedule__title">
+                                Выберите категорию консультаций:
+                            </div>
+                            <select id="select-type" class="schedule-select">
+                                <option value="Основа">Психология</option>
+                                <option value="Психосоматика">
+                                    Психосоматика
+                                </option>
+                                <option value="Насилие/ПА">Насилие/ПА</option>
+                            </select>
+                        </div>
+                        <div class="schedule__wrap">
+                            <div class="schedule__title">
+                                Список доступных сессий
+                            </div>
+                            <div class="schedule__subtitle">
+                                Время указано Московское
+                            </div>
+                            <div class="schedule__row">
+                                <div class="schedule__block">
+                                    <div class="schedule__date">21 марта</div>
+                                    <div class="schedule__row-time">
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            09:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            10:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            11:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            12:00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule__block">
+                                    <div class="schedule__date">23 марта</div>
+                                    <div class="schedule__row-time">
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            09:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            10:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            11:00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule__block">
+                                    <div class="schedule__date">24 марта</div>
+                                    <div class="schedule__row-time">
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            09:00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule__block">
+                                    <div class="schedule__date">25 марта</div>
+                                    <div class="schedule__row-time">
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            09:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            10:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            11:00
+                                        </div>
+                                        <div
+                                            class="schedule__time-item js-popup-order"
+                                        >
+                                            12:00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="psychologist-item__wrap">
+                    <h2>Пакеты консультаций со скидкой!</h2>
+                    <div class="psychologist-item__pack">
+                        <div class="psychologist-pack">
+                            <div class="psychologist-pack__row">
+                                <div class="psychologist-pack__item">
+                                    <div class="psychologist-pack__wrap">
+                                        <div class="psychologist-pack__title">
+                                            <ins>10 консультаций</ins> + 1 в
+                                            подарок
+                                        </div>
+                                        <div class="psychologist-pack__price">
+                                            Цена за пакет: <b>50 000 руб.</b>
+                                        </div>
+                                        <div class="psychologist-pack__edge">
+                                            <span
+                                                >Приоритетная запись к
+                                                психологу</span
+                                            >
+                                        </div>
+                                        <span class="psychologist-pack__info"
+                                            >Использовать можно в течение
+                                            <b>6 месяцев</b> с момента
+                                            покупки</span
+                                        >
+                                        <div class="psychologist-pack__btn">
+                                            <a
+                                                href=""
+                                                class="button button-main button-main__accent"
+                                                >оплатить и подобрать
+                                                психолога</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="psychologist-pack__item">
+                                    <div class="psychologist-pack__wrap">
+                                        <div class="psychologist-pack__title">
+                                            <ins>10 консультаций</ins> + 1 в
+                                            подарок
+                                        </div>
+                                        <div class="psychologist-pack__price">
+                                            Цена за пакет: <b>50 000 руб.</b>
+                                        </div>
+                                        <div class="psychologist-pack__edge">
+                                            <span
+                                                >Приоритетная запись к
+                                                психологу</span
+                                            >
+                                            <span>Экономия до 10%</span>
+                                        </div>
+                                        <span class="psychologist-pack__info"
+                                            >Использовать можно в течение
+                                            <b>6 месяцев</b> с момента
+                                            покупки</span
+                                        >
+                                        <div class="psychologist-pack__btn">
+                                            <a
+                                                href=""
+                                                class="button button-main button-main__accent"
+                                                >оплатить и подобрать
+                                                психолога</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="psychologist-pack__item">
+                                    <div class="psychologist-pack__wrap">
+                                        <div class="psychologist-pack__title">
+                                            <ins>10 консультаций</ins> + 1 в
+                                            подарок
+                                        </div>
+                                        <div class="psychologist-pack__price">
+                                            Цена за пакет: <b>50 000 руб.</b>
+                                        </div>
+                                        <div class="psychologist-pack__edge">
+                                            <span
+                                                >Приоритетная запись к
+                                                психологу</span
+                                            >
+                                            <span>Экономия до 10%</span>
+                                        </div>
+                                        <span class="psychologist-pack__info"
+                                            >Использовать можно в течение
+                                            <b>12 месяцев</b> с момента
+                                            покупки</span
+                                        >
+                                        <div class="psychologist-pack__btn">
+                                            <a
+                                                href=""
+                                                class="button button-main button-main__accent"
+                                                >оплатить и подобрать
+                                                психолога</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="psychologist-item__wrap">
+                    <h2>Задать вопрос психологу</h2>
+                    <div class="psychologist-item__feedback">
+                        <a
+                            href="#"
+                            class="button button-main button-main__accent"
+                            >ЗАДАТЬ ВОПРОС В WHATSAPP</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-social">
+                    <a class="footer-social-item" href="#">
+                        <div class="footer-social-item__icon">
+                            <img
+                                src="/build/files/icons/svg/icon-instagram.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="footer-social-item__text">@olly_russia</div>
+                    </a>
+                    <a class="footer-social-item" href="#">
+                        <div class="footer-social-item__icon">
+                            <img
+                                src="/build/files/icons/svg/icon-telegram.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="footer-social-item__text">@olly_russia</div>
+                    </a>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <div class="footer-contant">
+                            <a
+                                class="footer-contant__item footer-contant__phone"
+                                href="tel:+79785060117"
+                            >
+                                <img
+                                    src="/build/files/icons/svg/icon-phone.svg"
+                                    alt=""
+                                />
+                                <span>+7 978 506-01-17</span>
+                            </a>
+                            <a
+                                class="footer-contant__item footer-contant__email"
+                                href="mailto:info@ollyrussia.ru"
+                            >
+                                <img
+                                    src="/build/files/icons/svg/icon-mail.svg"
+                                    alt=""
+                                />
+                                <span>info@ollyrussia.ru</span>
+                            </a>
+                        </div>
+                        <div class="footer-contant__text">
+                            ИП Роменская Ольга Геннадьевна, ОГРНИП
+                            316920400063346
+                            <br />
+                            ИНН 920155476939
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer-contant__text">
+                            <a href="#"
+                                >Политика в отношении<br />
+                                обработки персональных данных</a
+                            >
+                            <a href="#">Правила оплаты</a>
+                            <a href="#">Контактная информация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal" data-modal="order">
+            <!-- Основной блок модального окна -->
+            <div class="modal__wrapper">
+                <!-- Обертка для центрирования окна с контентом -->
+                <div class="modal__body">
+                    <!-- Обертка для возможности прокрутки модального окна при недостаточной высоты окна браузера -->
+                    <div class="modal__inner">
+                        <!-- <div class="modal__close">Close</div> -->
+                        <div class="modal__title">
+                            Запись на прием к психологу
+                        </div>
+                        <div class="modal__step-bar order">
+                            <span class="progress"></span>
+                        </div>
+                        <div class="modal__nav">
+                            <div class="modal__nav--prev"><ins></ins>Назад</div>
+                        </div>
+                        <div class="modal-quiz">
+                            <div
+                                class="modal-quiz__item"
+                                data-step="1"
+                                data-title="Запись на прием к психологу"
+                            >
+                                <div class="modal__text">
+                                    <div class="modal-content">
+                                        <div class="modal-content__title">
+                                            Выберите дату, когда вам удобнее
+                                            прийти на прием
+                                        </div>
+                                        <span
+                                            >Выберите одну из свободных дат и
+                                            время</span
+                                        >
+                                    </div>
+                                    <div class="modal-quiz-next">Далее</div>
+                                </div>
+                            </div>
+                            <div
+                                class="modal-quiz__item"
+                                data-step="2"
+                                data-title="Запись на прием к психологу"
+                            >
+                                <div class="modal__text">
+                                    <div class="modal-content">
+                                        <div class="modal-content__title">
+                                            Выберите дату, когда вам удобнее
+                                            прийти на прием
+                                        </div>
+                                        <span
+                                            >Выберите одну из свободных дат и
+                                            время</span
+                                        >
+                                    </div>
+                                    <div class="modal-quiz-next">Далее</div>
+                                </div>
+                            </div>
+                            <div
+                                class="modal-quiz__item"
+                                data-step="3"
+                                data-title="Спасибо!"
+                            >
+                                <div class="modal__text">
+                                    <div class="modal-content">
+                                        <div class="modal-content__title">
+                                            Выберите дату, когда вам удобнее
+                                            прийти на прием
+                                        </div>
+                                        <span
+                                            >Выберите одну из свободных дат и
+                                            время</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="/build/js/app.min.js" defer></script>
+</html>

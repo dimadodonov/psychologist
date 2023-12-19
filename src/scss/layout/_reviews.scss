@@ -2,6 +2,8 @@
     margin-top: 90px;
 
     .swiper {
+        padding-bottom: 15px;
+
         &-reviews {
             overflow: visible;
         }
@@ -30,6 +32,10 @@
                 width: 100%;
                 max-width: 150px;
                 margin: 86px auto 0;
+
+                @include sm-block() {
+                    margin: 40px auto 0;
+                }
             }
 
             &-bullets {

@@ -1,7 +1,12 @@
 .numbersabout {
     position: relative;
     display: flex;
+    align-items: center;
     margin-bottom: 30px;
+
+    @include lg-block() {
+        flex-direction: column;
+    }
 
     &-ul {
         display: flex;
@@ -10,6 +15,17 @@
         max-width: 700px;
         margin-top: 50px;
         gap: 30px;
+
+        @include xl-block() {
+            max-width: 579px;
+            gap: 24px;
+        }
+
+        @include lg-block() {
+            flex-flow: row wrap;
+            max-width: 100%;
+            gap: 20px;
+        }
 
         &-item {
             display: flex;
@@ -21,7 +37,20 @@
             border-radius: 15px;
             box-shadow: 0 0 20px 0 rgba(0, 0, 1, 0.1);
 
+            @include lg-block() {
+                flex-direction: column;
+                width: calc(1 / 2 * 100% - 20px);
+                height: auto;
+                padding: 15px 30px;
+            }
+
+            @include md-block() {
+                width: 100%;
+                padding: 10px 20px;
+            }
+
             &__title {
+                position: relative;
                 min-width: 145px;
                 font-family: $f-bold;
                 font-size: 48.123px;
@@ -32,9 +61,32 @@
                 text-align: center;
                 white-space: nowrap;
 
+                @include xl-block() {
+                    min-width: 119px;
+                    font-size: 39px;
+                }
+
+                &::before {
+                    @include lg-block() {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        width: 130px;
+                        height: 1px;
+                        margin-top: 15px;
+                        transform: translateX(-50%);
+                        background: #e2e2e2;
+                    }
+                }
+
                 ins {
                     font-size: 17.128px;
                     text-decoration: none;
+
+                    @include xl-block() {
+                        font-size: 14px;
+                    }
                 }
             }
 
@@ -49,6 +101,22 @@
                 font-weight: 400;
                 line-height: 20px;
 
+                @include xl-block() {
+                    font-size: 16px;
+                }
+
+                @include lg-block() {
+                    margin-top: 40px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    border-left: none;
+                    text-align: center;
+                }
+
+                @include md-block() {
+                    font-size: 13px;
+                }
+
                 b {
                     font-family: $f-semibold;
                     font-weight: normal;
@@ -59,6 +127,16 @@
 
     &-img {
         width: calc(100% - 700px);
+
+        @include xl-block() {
+            width: calc(100% - 579px);
+        }
+
+        @include lg-block() {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
     }
 }
 

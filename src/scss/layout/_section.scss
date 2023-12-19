@@ -491,6 +491,8 @@
     }
 
     &-about {
+        overflow: hidden;
+
         .section__title {
             @include lg-block() {
                 max-width: 400px;
@@ -501,6 +503,10 @@
 
     &-step {
         margin: 150px 0 0;
+
+        @include sm-block() {
+            margin: 100px 0 0;
+        }
 
         &__btn {
             display: flex;
@@ -513,6 +519,10 @@
     &-psychologist {
         margin-top: 150px;
 
+        @include sm-block() {
+            margin-top: 100px;
+        }
+
         h2 {
             @include sm-block() {
                 font-size: 15px;
@@ -521,6 +531,11 @@
 
         &-selection {
             margin-top: 150px;
+            overflow: hidden;
+
+            @include sm-block() {
+                margin-top: 100px;
+            }
 
             .section-intro-slider__inner {
                 top: 0;
@@ -571,6 +586,10 @@
     &-numbersabout {
         margin-top: 150px;
 
+        @include sm-block() {
+            margin-top: 100px;
+        }
+
         h2 {
             ins {
                 position: relative;
@@ -588,7 +607,19 @@
 
                     transform: rotate(46.97deg);
 
-                    background: url('/build/files/icons/svg/numbersabout-arrow.svg');
+                    background: url('/build/files/icons/svg/numbersabout-arrow.svg')
+                        no-repeat;
+                    background-size: contain;
+
+                    @include lg-block() {
+                        top: 20px;
+                        width: 43.022px;
+                        height: 28.681px;
+                        transform: rotate(67deg);
+                        background: url('/build/files/icons/svg/numbersabout-arrow-mob.svg')
+                            no-repeat;
+                        background-size: contain;
+                    }
                 }
             }
         }
@@ -596,6 +627,10 @@
 
     &-faq {
         margin-top: 150px;
+
+        @include sm-block() {
+            margin-top: 100px;
+        }
 
         &__wrap {
             display: flex;
@@ -652,11 +687,21 @@
 
     &-reviews {
         margin-top: 150px;
+        overflow: hidden;
+
+        @include sm-block() {
+            margin-top: 100px;
+        }
     }
 
     &-blog {
         margin-top: 150px;
         padding-bottom: 50px;
+        overflow: hidden;
+
+        @include sm-block() {
+            margin-top: 100px;
+        }
 
         &__btn {
             display: flex;
