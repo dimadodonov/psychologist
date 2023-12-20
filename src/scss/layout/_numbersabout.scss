@@ -78,6 +78,10 @@
                         transform: translateX(-50%);
                         background: #e2e2e2;
                     }
+
+                    @include lg-block() {
+                        margin-top: 8px;
+                    }
                 }
 
                 ins {
@@ -114,6 +118,7 @@
                 }
 
                 @include md-block() {
+                    margin-top: 20px;
                     font-size: 13px;
                 }
 

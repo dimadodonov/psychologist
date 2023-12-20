@@ -882,6 +882,7 @@
     &-subscribe {
         max-width: 760px;
         margin-top: 80px;
+        margin-bottom: 50px;
 
         &__title {
             @include md-block() {
@@ -900,6 +901,29 @@
                     line-height: 48px;
                     text-align: center;
                 }
+            }
+        }
+
+        &-archive {
+            max-width: 100%;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 40px;
+
+                @include sm-block() {
+                    display: inline-block;
+                }
+
+                ins {
+                    display: inline-block;
+                }
+            }
+
+            .form-subscribe input[type='text'] {
+                width: 100%;
             }
         }
 

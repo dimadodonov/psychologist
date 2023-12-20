@@ -18,8 +18,7 @@
                 </div>
                 <a class="header-logo" href="/">
                     <span class="header-logo__text"
-                        >Команда психологов<br />
-                        Ольги Роменской</span
+                        >Команда психологов Ольги Семенихиной (Роменской)</span
                     >
                 </a>
                 <nav class="nav-home">
@@ -36,7 +35,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__callback">
+                <div class="header__callback js-popup-feedback">
                     <img
                         src="/build/files/icons/svg/icon-phone-bg.svg"
                         alt=""
@@ -52,7 +51,7 @@
                 </h1>
                 <div class="blog-archive__wrap">
                     <div class="blog-archive__row">
-                        <article class="article blog-article">
+                        <a class="article blog-article" href="/blog-item.html">
                             <div class="blog-article__img">
                                 <img
                                     src="/build/images/blog/post-2.jpg"
@@ -81,19 +80,16 @@
                                     рассказывает эксперт-психолог
                                 </div>
 
-                                <a
-                                    class="blog-article__more"
-                                    href="/blog-item.html"
-                                >
+                                <div class="blog-article__more">
                                     <span>Читать полностью</span>
                                     <img
                                         src="/build/files/icons/svg/icon-arrow-right.svg"
                                         alt=""
                                     />
-                                </a>
+                                </div>
                             </div>
-                        </article>
-                        <article class="article blog-article">
+                        </a>
+                        <a class="article blog-article" href="/blog-item.html">
                             <div class="blog-article__img">
                                 <img
                                     src="/build/images/blog/post-2.jpg"
@@ -122,19 +118,16 @@
                                     рассказывает эксперт-психолог
                                 </div>
 
-                                <a
-                                    class="blog-article__more"
-                                    href="/blog-item.html"
-                                >
+                                <div class="blog-article__more">
                                     <span>Читать полностью</span>
                                     <img
                                         src="/build/files/icons/svg/icon-arrow-right.svg"
                                         alt=""
                                     />
-                                </a>
+                                </div>
                             </div>
-                        </article>
-                        <article class="article blog-article">
+                        </a>
+                        <a class="article blog-article" href="/blog-item.html">
                             <div class="blog-article__img">
                                 <img
                                     src="/build/images/blog/post-2.jpg"
@@ -163,19 +156,16 @@
                                     рассказывает эксперт-психолог
                                 </div>
 
-                                <a
-                                    class="blog-article__more"
-                                    href="/blog-item.html"
-                                >
+                                <div class="blog-article__more">
                                     <span>Читать полностью</span>
                                     <img
                                         src="/build/files/icons/svg/icon-arrow-right.svg"
                                         alt=""
                                     />
-                                </a>
+                                </div>
                             </div>
-                        </article>
-                        <article class="article blog-article">
+                        </a>
+                        <a class="article blog-article" href="/blog-item.html">
                             <div class="blog-article__img">
                                 <img
                                     src="/build/images/blog/post-2.jpg"
@@ -204,19 +194,16 @@
                                     рассказывает эксперт-психолог
                                 </div>
 
-                                <a
-                                    class="blog-article__more"
-                                    href="/blog-item.html"
-                                >
+                                <div class="blog-article__more">
                                     <span>Читать полностью</span>
                                     <img
                                         src="/build/files/icons/svg/icon-arrow-right.svg"
                                         alt=""
                                     />
-                                </a>
+                                </div>
                             </div>
-                        </article>
-                        <article class="article blog-article">
+                        </a>
+                        <a class="article blog-article" href="/blog-item.html">
                             <div class="blog-article__img">
                                 <img
                                     src="/build/images/blog/post-2.jpg"
@@ -245,18 +232,15 @@
                                     рассказывает эксперт-психолог
                                 </div>
 
-                                <a
-                                    class="blog-article__more"
-                                    href="/blog-item.html"
-                                >
+                                <div class="blog-article__more">
                                     <span>Читать полностью</span>
                                     <img
                                         src="/build/files/icons/svg/icon-arrow-right.svg"
                                         alt=""
                                     />
-                                </a>
+                                </div>
                             </div>
-                        </article>
+                        </a>
                     </div>
                     <aside class="blog-aside aside">
                         <div class="blog-article blog-choise-card">
@@ -289,6 +273,51 @@
                 </div>
                 <div class="blog-archive__btn">
                     <a href="#">ЧИТАТЬ ВСЕ СТАТЬИ</a>
+                </div>
+
+                <div class="blog-subscribe blog-subscribe-archive">
+                    <h2>подпишитесь, <ins>чтобы не пропустить</ins></h2>
+                    <div class="form form-subscribe">
+                        <div class="form-item form-item-email">
+                            <input
+                                type="text"
+                                placeholder="Введите вашу почту"
+                            />
+                            <div class="form-subscribe__btn">
+                                <input type="submit" value="Подписаться" />
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="checkbox_one"
+                                    value="0"
+                                    class="checkbox"
+                                    aria-invalid="false"
+                                /><span class="form-item-label"
+                                    >Согласие с условиями
+                                    <a href="/privacy"
+                                        >обработки персональных данных</a
+                                    ></span
+                                ></label
+                            >
+                        </div>
+                        <div class="form-item">
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="checkbox_two"
+                                    value="1"
+                                    checked="checked"
+                                    class="checkbox"
+                                    aria-invalid="false"
+                                /><span class="form-item-label"
+                                    >Согласие получать рассылку</span
+                                ></label
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -359,6 +388,89 @@
                 </div>
             </div>
         </footer>
+        <div class="modal" data-modal="feedback">
+            <!-- Основной блок модального окна -->
+            <div class="modal__wrapper">
+                <!-- Обертка для центрирования окна с контентом -->
+                <div class="modal__body">
+                    <!-- Обертка для возможности прокрутки модального окна при недостаточной высоты окна браузера -->
+                    <div class="modal__inner">
+                        <div class="modal__close"></div>
+                        <div class="modal__title">Обратный звонок</div>
+
+                        <div class="modal__text">
+                            <div class="modal-content">
+                                <div class="form-input">
+                                    <input
+                                        type="text"
+                                        placeholder="Ваши имя и фамилия"
+                                    />
+                                </div>
+                                <div class="form-input">
+                                    <input
+                                        type="text"
+                                        placeholder="Ваш телефон"
+                                    />
+                                </div>
+                                <div class="form-input">
+                                    <input
+                                        type="text"
+                                        placeholder="Ваша электронная почта"
+                                    />
+                                </div>
+                                <div class="form-checkbox__wrap">
+                                    <div class="form-checkbox">
+                                        <input
+                                            id="checkbox-1"
+                                            type="checkbox"
+                                            name="radio-type"
+                                            value="1"
+                                            checked
+                                        />
+                                        <label for="checkbox-1"
+                                            ><ins></ins>
+                                            <div class="label__wrap">
+                                                <span
+                                                    >Я согласен с
+                                                    <a href="#"
+                                                        >политикой обработки
+                                                        персональных данных</a
+                                                    ></span
+                                                >
+                                            </div></label
+                                        >
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input
+                                            id="checkbox-2"
+                                            type="checkbox"
+                                            name="radio-type"
+                                            value="1"
+                                        />
+                                        <label for="checkbox-2"
+                                            ><ins></ins>
+                                            <div class="label__wrap">
+                                                <span
+                                                    >Я подтверждаю, что мне есть
+                                                    18 лет</span
+                                                >
+                                            </div></label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-btn__wrap">
+                            <div
+                                class="modal-btn modal-btn__accent modal-quiz-next"
+                            >
+                                Перезвонить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 
     <script src="/build/js/app.min.js" defer></script>

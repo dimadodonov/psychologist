@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { Fancybox } from '@fancyapps/ui';
 
 export default () => {
     (function ($) {
@@ -97,6 +98,51 @@ export default () => {
             }
         }
     })($.noConflict());
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        dragToClose: false,
+
+        Toolbar: {
+            display: {
+                left: [],
+                middle: [],
+                right: ['close'],
+            },
+        },
+
+        Images: {
+            zoom: false,
+        },
+
+        Thumbs: {
+            type: 'classic',
+        },
+
+        Carousel: {
+            transition: false,
+            friction: 0,
+        },
+
+        on: {
+            'Carousel.ready Carousel.change': (fancybox) => {
+                fancybox.container.style.setProperty(
+                    '--bg-image',
+                    `url("${fancybox.getSlide().thumbSrc}")`
+                );
+            },
+        },
+    });
+
+    Fancybox.bind('[data-fancybox="video-gallery"]', {
+        Html: {
+            youtube: {
+                controls: 0,
+                rel: 0,
+                fs: 0,
+            },
+        },
+        Thumbs: false,
+    });
 
     document.querySelectorAll('a[href^="#"').forEach((link) => {
         link.addEventListener('click', function (e) {

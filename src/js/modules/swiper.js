@@ -17,7 +17,7 @@ export default () => {
             // when window width is >= 320px
             320: {},
             // when window width is >= 480px
-            480: {},
+            480: { spaceBetween: 10 },
             // when window width is >= 640px
             640: { spaceBetween: 20 },
             960: { spaceBetween: 20 },

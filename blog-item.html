@@ -18,8 +18,7 @@
                 </div>
                 <a class="header-logo" href="/">
                     <span class="header-logo__text"
-                        >Команда психологов<br />
-                        Ольги Роменской</span
+                        >Команда психологов Ольги Семенихиной (Роменской)</span
                     >
                 </a>
                 <nav class="nav-home">
@@ -36,7 +35,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__callback">
+                <div class="header__callback js-popup-feedback">
                     <img
                         src="/build/files/icons/svg/icon-phone-bg.svg"
                         alt=""
@@ -193,7 +192,10 @@
                         <div class="sidebar-item">
                             <div class="sidebar-item__title">Читай также</div>
                             <div class="blog-loop">
-                                <article class="article blog-article">
+                                <a
+                                    class="article blog-article"
+                                    href="/blog-item.html"
+                                >
                                     <div class="blog-article__img">
                                         <img
                                             src="/build/images/blog/post-2.jpg"
@@ -239,7 +241,7 @@
                                             />
                                         </a>
                                     </div>
-                                </article>
+                                </a>
                             </div>
                         </div>
                         <div class="blog-article blog-choise-card">
@@ -410,6 +412,89 @@
                 </div>
             </div>
         </footer>
+        <div class="modal" data-modal="feedback">
+            <!-- Основной блок модального окна -->
+            <div class="modal__wrapper">
+                <!-- Обертка для центрирования окна с контентом -->
+                <div class="modal__body">
+                    <!-- Обертка для возможности прокрутки модального окна при недостаточной высоты окна браузера -->
+                    <div class="modal__inner">
+                        <div class="modal__close"></div>
+                        <div class="modal__title">Обратный звонок</div>
+
+                        <div class="modal__text">
+                            <div class="modal-content">
+                                <div class="form-input">
+                                    <input
+                                        type="text"
+                                        placeholder="Ваши имя и фамилия"
+                                    />
+                                </div>
+                                <div class="form-input">
+                                    <input
+                                        type="text"
+                                        placeholder="Ваш телефон"
+                                    />
+                                </div>
+                                <div class="form-input">
+                                    <input
+                                        type="text"
+                                        placeholder="Ваша электронная почта"
+                                    />
+                                </div>
+                                <div class="form-checkbox__wrap">
+                                    <div class="form-checkbox">
+                                        <input
+                                            id="checkbox-1"
+                                            type="checkbox"
+                                            name="radio-type"
+                                            value="1"
+                                            checked
+                                        />
+                                        <label for="checkbox-1"
+                                            ><ins></ins>
+                                            <div class="label__wrap">
+                                                <span
+                                                    >Я согласен с
+                                                    <a href="#"
+                                                        >политикой обработки
+                                                        персональных данных</a
+                                                    ></span
+                                                >
+                                            </div></label
+                                        >
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input
+                                            id="checkbox-2"
+                                            type="checkbox"
+                                            name="radio-type"
+                                            value="1"
+                                        />
+                                        <label for="checkbox-2"
+                                            ><ins></ins>
+                                            <div class="label__wrap">
+                                                <span
+                                                    >Я подтверждаю, что мне есть
+                                                    18 лет</span
+                                                >
+                                            </div></label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-btn__wrap">
+                            <div
+                                class="modal-btn modal-btn__accent modal-quiz-next"
+                            >
+                                Перезвонить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 
     <script src="/build/js/app.min.js" defer></script>

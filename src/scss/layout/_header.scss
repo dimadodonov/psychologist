@@ -19,6 +19,7 @@
         border-radius: 30px;
         background: #fff;
         box-shadow: 0 0 38px 0 rgba(120, 121, 123, 0.1);
+        cursor: pointer;
         gap: 14px;
 
         @include lg-block() {
@@ -274,7 +275,18 @@
         }
 
         &__text {
+            padding: 0 10px;
             color: $color-text;
+
+            @include md-block() {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            @include sm-block() {
+                font-size: 10px;
+                line-height: 14px;
+            }
         }
     }
 

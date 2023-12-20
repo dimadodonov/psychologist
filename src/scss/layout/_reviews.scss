@@ -135,8 +135,16 @@
                 );
             }
 
-            &.show::after {
-                opacity: 0;
+            &.show {
+                &::after {
+                    opacity: 0;
+                }
+
+                .reviews-item__btn {
+                    @include sm-block() {
+                        margin-top: 0;
+                    }
+                }
             }
         }
 
@@ -182,7 +190,6 @@
 
         &__btn {
             position: absolute;
-
             left: 50%;
             z-index: 10;
             display: inline-block;
@@ -194,6 +201,12 @@
             box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.06);
             color: #5ab3c9;
             cursor: pointer;
+
+            @include sm-block() {
+                margin-top: -50px;
+                border-radius: 15px;
+                font-size: 12px;
+            }
 
             &::before {
                 content: '';
