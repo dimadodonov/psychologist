@@ -335,6 +335,11 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
 
+        @include sm-block() {
+            padding: 15px;
+            border-radius: 25px;
+        }
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -351,12 +356,24 @@
             border-radius: 15px;
             color: #000;
             text-align: center;
+
+            @include sm-block() {
+                padding: 25px 15px;
+            }
         }
 
         & .modal__close {
             position: absolute;
-            top: 16px;
-            right: 16px;
+            top: 10px;
+            right: 10px;
+            opacity: 0.6;
+            width: 24px;
+            height: 24px;
+            overflow: hidden;
+            background: url('/build/files/icons/svg/icon--close.svg') no-repeat;
+            background-position: center center;
+            background-size: contain;
+            color: transparent;
             font-size: 14px;
             cursor: pointer;
         }
@@ -372,6 +389,11 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @include sm-block() {
+                font-size: 18px;
+                line-height: normal;
+            }
         }
 
         & .modal__text {
@@ -383,20 +405,28 @@
             font-size: 16px;
             font-weight: 500;
             line-height: 1.5;
+
+            @include sm-block() {
+                font-size: 14px;
+                line-height: normal;
+            }
         }
     }
 
     &__inner {
         &.thanks {
             width: 560px;
-
             height: 560px;
-
             padding: 100px 0 190px;
-
             background: url('/build/images/modal-thanks.jpg') no-repeat;
             background-position: bottom right;
             background-size: cover;
+
+            @include sm-block() {
+                width: auto;
+                height: auto;
+                padding: 50px 0;
+            }
 
             .modal__nav {
                 display: none;
@@ -409,6 +439,12 @@
                 font-size: 16px;
                 font-style: normal;
                 line-height: normal;
+
+                @include sm-block() {
+                    width: auto;
+                    padding: 0 10px;
+                    font-size: 14px;
+                }
             }
 
             .modal-content span {
@@ -418,6 +454,10 @@
                 font-size: 14px;
                 font-style: normal;
                 line-height: 16.518px;
+
+                @include sm-block() {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -504,6 +544,10 @@
             font-family: $f-semibold;
             font-size: 20px;
             font-weight: normal;
+
+            @include sm-block() {
+                font-size: 18px;
+            }
         }
 
         span {
@@ -513,6 +557,10 @@
             font-family: $f-light;
             font-size: 16px;
             font-style: normal;
+
+            @include sm-block() {
+                font-size: 14px;
+            }
         }
 
         small {
@@ -521,6 +569,10 @@
             font-family: $f-light;
             font-size: 16px;
             font-style: normal;
+
+            @include sm-block() {
+                font-size: 12px;
+            }
         }
     }
 

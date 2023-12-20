@@ -1,4 +1,12 @@
 .bg {
+    &-home {
+        background: url('/build/images/bg-home.jpg') no-repeat;
+        background-color: #fbfbfb;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 1920px 10221px;
+    }
+
     &-corp {
         background: url('/build/images/bg-corp-page.jpg') no-repeat;
         background-color: #fbfbfb;

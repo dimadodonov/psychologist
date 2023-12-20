@@ -106,8 +106,19 @@
             text-transform: uppercase;
 
             @include lg-block() {
-                max-width: 692px;
+                font-size: 37px;
+                line-height: 48px;
                 text-align: center;
+            }
+
+            @include md-block() {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            @include sm-block() {
+                font-size: 22px;
+                line-height: 27px;
             }
         }
     }

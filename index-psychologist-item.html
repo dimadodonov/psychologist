@@ -437,7 +437,7 @@
                 <div class="modal__body">
                     <!-- Обертка для возможности прокрутки модального окна при недостаточной высоты окна браузера -->
                     <div class="modal__inner">
-                        <!-- <div class="modal__close">Close</div> -->
+                        <div class="modal__close"></div>
                         <div class="modal__title">
                             Запись на прием к психологу
                         </div>
@@ -463,13 +463,110 @@
                                             >Выберите одну из свободных дат и
                                             время</span
                                         >
+                                        <div class="form-radio__wrap">
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-1"
+                                                    type="radio"
+                                                    name="radio"
+                                                    value="1"
+                                                    checked
+                                                />
+                                                <label for="radio-1"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span
+                                                            >Личные
+                                                            запросы</span
+                                                        ><small
+                                                            >Отношение к телу,
+                                                            страхи, личные
+                                                            границы, выражение
+                                                            эмоций</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-2"
+                                                    type="radio"
+                                                    name="radio"
+                                                    value="2"
+                                                />
+                                                <label for="radio-2"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span
+                                                            >Личные
+                                                            запросы</span
+                                                        ><small
+                                                            >Отношение к телу,
+                                                            страхи, личные
+                                                            границы, выражение
+                                                            эмоций</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-3"
+                                                    type="radio"
+                                                    name="radio"
+                                                    value="3"
+                                                />
+                                                <label for="radio-3"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span
+                                                            >Личные
+                                                            запросы</span
+                                                        ><small
+                                                            >Отношение к телу,
+                                                            страхи, личные
+                                                            границы, выражение
+                                                            эмоций</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-4"
+                                                    type="radio"
+                                                    name="radio"
+                                                    value="4"
+                                                    disabled
+                                                />
+                                                <label for="radio-4"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span
+                                                            >Личные
+                                                            запросы</span
+                                                        ><small
+                                                            >Radio
+                                                            disabled</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-quiz-next">Далее</div>
+                                </div>
+                                <div class="modal-btn__wrap">
+                                    <div class="modal-btn modal-quiz-next">
+                                        Далее
+                                    </div>
                                 </div>
                             </div>
                             <div
                                 class="modal-quiz__item"
-                                data-step="2"
+                                data-step="1"
                                 data-title="Запись на прием к психологу"
                             >
                                 <div class="modal__text">
@@ -482,25 +579,196 @@
                                             >Выберите одну из свободных дат и
                                             время</span
                                         >
+                                        <small>Время московское</small>
+
+                                        <div class="form-radio__wrap">
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-type-1"
+                                                    type="radio"
+                                                    name="radio-type"
+                                                    value="1"
+                                                    checked
+                                                />
+                                                <label for="radio-type-1"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span>Утром</span
+                                                        ><small
+                                                            >С 09:00 до
+                                                            13:00</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-type-2"
+                                                    type="radio"
+                                                    name="radio-type"
+                                                    value="2"
+                                                />
+                                                <label for="radio-type-2"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span>Днём</span
+                                                        ><small
+                                                            >С 13:00 до
+                                                            17:00</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+
+                                            <div class="form-radio">
+                                                <input
+                                                    id="radio-type-3"
+                                                    type="radio"
+                                                    name="radio-type"
+                                                    value="3"
+                                                />
+                                                <label for="radio-type-3"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span>Вечером </span
+                                                        ><small
+                                                            >С 18:00 до
+                                                            20:00</small
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-quiz-next">Далее</div>
+                                </div>
+                                <div class="modal-btn__wrap">
+                                    <div class="modal-btn modal-quiz-next">
+                                        Далее
+                                    </div>
                                 </div>
                             </div>
                             <div
                                 class="modal-quiz__item"
+                                data-step="2"
+                                data-title="Запись на прием к психологу"
+                            >
+                                <div class="modal__text">
+                                    <div class="modal-content">
+                                        <div class="modal-content__title">
+                                            Заполните контактные данные
+                                        </div>
+                                        <span
+                                            >Наш менеджер пришлет вам в WhatsApp
+                                            или Telegram психологов, которые
+                                            подойдут для вас</span
+                                        >
+                                        <div class="form-input">
+                                            <input
+                                                type="text"
+                                                placeholder="Ваши имя и фамилия"
+                                            />
+                                        </div>
+                                        <div class="form-input">
+                                            <input
+                                                type="text"
+                                                placeholder="Ваш телефон"
+                                            />
+                                        </div>
+                                        <div class="form-input">
+                                            <input
+                                                type="text"
+                                                placeholder="Ваша электронная почта"
+                                            />
+                                        </div>
+                                        <div class="form-checkbox__wrap">
+                                            <div class="form-checkbox">
+                                                <input
+                                                    id="checkbox-1"
+                                                    type="checkbox"
+                                                    name="radio-type"
+                                                    value="1"
+                                                    checked
+                                                />
+                                                <label for="checkbox-1"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span
+                                                            >Я согласен с
+                                                            <a href="#"
+                                                                >политикой
+                                                                обработки
+                                                                персональных
+                                                                данных</a
+                                                            ></span
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+                                            <div class="form-checkbox">
+                                                <input
+                                                    id="checkbox-2"
+                                                    type="checkbox"
+                                                    name="radio-type"
+                                                    value="1"
+                                                />
+                                                <label for="checkbox-2"
+                                                    ><ins></ins>
+                                                    <div class="label__wrap">
+                                                        <span
+                                                            >Я подтверждаю, что
+                                                            мне есть 18
+                                                            лет</span
+                                                        >
+                                                    </div></label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-btn__wrap">
+                                    <div
+                                        class="modal-btn modal-btn__accent modal-quiz-next"
+                                    >
+                                        отправить
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="modal-quiz__item thanks"
                                 data-step="3"
                                 data-title="Спасибо!"
                             >
                                 <div class="modal__text">
                                     <div class="modal-content">
                                         <div class="modal-content__title">
-                                            Выберите дату, когда вам удобнее
-                                            прийти на прием
+                                            В ближайшее время наш менеджер
+                                            напишет вам в WhatsApp или Telegram
+                                            и подтвердит запись к психологу.
                                         </div>
                                         <span
-                                            >Выберите одну из свободных дат и
-                                            время</span
+                                            >Наши группы в социальных
+                                            сетях</span
                                         >
+                                        <div class="modal-social">
+                                            <a
+                                                href="#"
+                                                class="modal-social__item vk"
+                                            ></a>
+                                            <a
+                                                href="#"
+                                                class="modal-social__item inst"
+                                            ></a>
+                                        </div>
+                                        <div class="modal-link">
+                                            <a
+                                                href="https://api.whatsapp.com/send?phone=79785060117&text="
+                                                >+7 978 506-01-17</a
+                                            >
+                                            <a href="mailto:info@ollyrussia.ru"
+                                                >info@ollyrussia.ru</a
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
