@@ -79,10 +79,11 @@ export default () => {
             grid: {
                 rows: 2,
             },
-            // pagination: {
-            //     el: '.swiper-pagination',
-            //     clickable: true,
-            // },
+
+            navigation: {
+                prevEl: '.swiper-btn-prev',
+                nextEl: '.swiper-btn-next',
+            },
             breakpoints: {
                 320: {
                     slidesPerView: 1,

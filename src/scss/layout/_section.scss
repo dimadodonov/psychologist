@@ -600,6 +600,10 @@
     &-psychologist {
         margin-top: 150px;
 
+        @include lg-block() {
+            overflow: hidden;
+        }
+
         @include sm-block() {
             margin-top: 100px;
         }

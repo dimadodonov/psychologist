@@ -936,7 +936,11 @@
         margin: 40px auto 0;
 
         .swiper {
-            padding-bottom: 40px;
+            margin-bottom: 40px;
+
+            @include lg-block() {
+                overflow: visible;
+            }
         }
 
         .swiper-grid-column > .swiper-wrapper {
@@ -952,6 +956,42 @@
             // height: unset;
 
             margin-top: 0 !important;
+        }
+
+        .swiper-btn {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            transform: translateY(-50%);
+            border-radius: 16px;
+            background: linear-gradient(174deg, #53c4d0 3.78%, #008a99 94.73%);
+            cursor: pointer;
+
+            @include lg-block() {
+                display: flex;
+            }
+
+            svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            &.swiper-button-disabled {
+                opacity: 0;
+            }
+        }
+
+        .swiper-btn-prev {
+            left: -15px;
+        }
+
+        .swiper-btn-next {
+            right: -15px;
         }
 
         &-card {
